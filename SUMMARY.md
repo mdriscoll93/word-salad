@@ -13,3 +13,5 @@
     * [Arrays](cheatsheets/bash/arrays.md)
   * [system architecture](cheatsheets/system-architecture/README.md)
     * [BIOS / UEFI Hardware Settings](cheatsheets/system-architecture/bios-uefi-hardware-settings.md)
+  * [virtualization](cheatsheets/virtualization/README.md)
+    * [useful virsh commands](cheatsheets/virtualization/useful-virsh-commands.md)

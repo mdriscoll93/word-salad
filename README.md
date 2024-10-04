@@ -23,3 +23,7 @@ layout:
 [network-tips](cheatsheets/network-tips/)
 {% endcontent-ref %}
 
+{% content-ref url="cheatsheets/system-architecture/" %}
+[system-architecture](cheatsheets/system-architecture/)
+{% endcontent-ref %}
+
