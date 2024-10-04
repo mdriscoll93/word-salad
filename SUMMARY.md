@@ -1,0 +1,13 @@
+# Table of contents
+
+* [cheatsheets](README.md)
+  * [network tips](cheatsheets/network-tips/README.md)
+    * [Intro to iproute2](cheatsheets/network-tips/intro-to-iproute2/README.md)
+      * [Configuration with iproute2](cheatsheets/network-tips/intro-to-iproute2/configuration-with-iproute2.md)
+      * [Debugging network configuration problems](cheatsheets/network-tips/intro-to-iproute2/debugging-network-configuration-problems.md)
+      * [Persistent network configuration](cheatsheets/network-tips/intro-to-iproute2/persistent-network-configuration.md)
+      * [Configure client-side DNS](cheatsheets/network-tips/intro-to-iproute2/configure-client-side-dns.md)
+    * [Comparison of IPv4 and IPv6](cheatsheets/network-tips/comparison-of-ipv4-and-ipv6.md)
+  * [bash](cheatsheets/bash/README.md)
+    * [Loops](cheatsheets/bash/loops.md)
+    * [Arrays](cheatsheets/bash/arrays.md)
