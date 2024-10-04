@@ -11,3 +11,5 @@
   * [bash](cheatsheets/bash/README.md)
     * [Loops](cheatsheets/bash/loops.md)
     * [Arrays](cheatsheets/bash/arrays.md)
+  * [system architecture](cheatsheets/system-architecture/README.md)
+    * [BIOS / UEFI Hardware Settings](cheatsheets/system-architecture/bios-uefi-hardware-settings.md)
