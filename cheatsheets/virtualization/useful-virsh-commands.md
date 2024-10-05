@@ -364,9 +364,7 @@ Here is a quick breakdown of what each part of the syntax means:
 
 ***
 
-##
-
-## command quick ref.
+## command quick reference
 
 ### Get Basic Information About the VM:
 
@@ -641,3 +639,255 @@ Security DOI:
 </domain>
 
 ```
+
+### Check network VM interfaces
+
+* to list the network interfaces used by the VM and see their MAC addresses, bridge connections, etc.: `sudo virsh domiflist <vm_name>`
+
+```bash
+[root@thinkbox ~]# virsh domiflist ubuntu-cloud-vm
+ Interface   Type     Source   Model    MAC
+-----------------------------------------------------------
+ vnet1       bridge   ovsbr0   virtio   52:54:00:06:87:83
+```
+
+* To get additional information about a specific network interface (e.g., `vnet0`), use: `sudo virsh domifaddr <vm_name>`
+
+```bash
+[root@thinkbox ~]# virsh domifaddr rh8-vm01
+ Name       MAC address          Protocol     Address
+-------------------------------------------------------------------------------
+ vnet6      52:54:00:c8:17:6e    ipv4         192.168.122.19/24
+ vnet7      52:54:00:04:4d:ac    ipv4         192.168.64.210/24
+```
+
+### Inspect VM Disk Information
+
+* view details about VM's disk(s):
+
+```bash
+[root@thinkbox ~]# virsh domblklist ubuntu-cloud-vm
+Target     Source
+---------------------------
+vda        /var/lib/libvirt/images/ubuntu-cloud-vm.qcow2
+hda        /var/lib/libvirt/images/ubuntu-cloud-vm-cloud-init.iso
+```
+
+for more info on a specific disk:
+
+```bash
+[root@thinkbox ~]# virsh domblklist ubuntu-cloud-vm --details 
+ Type   Device   Target   Source
+----------------------------------------------------------------------------------
+ file   disk     vda      /var/lib/libvirt/images/ubuntu-cloud-vm.qcow2
+ file   cdrom    sda      /var/lib/libvirt/images/ubuntu-cloud-vm-cloud-init.iso
+```
+
+### Monitor real-time Performance Metrics
+
+* monitor CPU and memory usage of VM
+
+```bash
+[root@thinkbox ~]# virsh domstats ubuntu-cloud-vm
+Domain: 'ubuntu-cloud-vm'
+  state.state=1
+  state.reason=1
+  cpu.time=486629513000
+  cpu.user=368672472000
+  cpu.system=117957040000
+  cpu.cache.monitor.count=0
+  cpu.haltpoll.success.time=1057833298
+  cpu.haltpoll.fail.time=541927945
+  balloon.current=2097152
+  balloon.maximum=2097152
+  balloon.swap_in=0
+  balloon.swap_out=0
+  balloon.major_fault=0
+  balloon.minor_fault=0
+  balloon.unused=1921792
+  balloon.available=2010804
+  balloon.usable=1851408
+  balloon.last-update=1728120434
+  balloon.disk_caches=68820
+  balloon.hugetlb_pgalloc=0
+  balloon.hugetlb_pgfail=0
+  balloon.rss=1388484
+  vcpu.current=2
+  vcpu.maximum=2
+  vcpu.0.state=1
+  vcpu.0.time=115940000000
+  vcpu.0.wait=0
+  vcpu.0.delay=34399069382
+  vcpu.0.tlb_flush.sum=436657
+  vcpu.0.directed_yield_successful.sum=205
+  vcpu.0.preemption_other.sum=16376
+  vcpu.0.insn_emulation_fail.sum=0
+  vcpu.0.pf_emulate.sum=998
+  vcpu.0.halt_wait_ns.sum=7021710117997
+  vcpu.0.mmio_exits.sum=151641
+  vcpu.0.nmi_injections.sum=0
+  vcpu.0.nmi_window_exits.sum=0
+  vcpu.0.blocking.cur=yes
+  vcpu.0.pf_taken.sum=99059
+  vcpu.0.insn_emulation.sum=691263
+  vcpu.0.halt_poll_success_ns.sum=626050059
+  vcpu.0.pf_mmio_spte_created.sum=913
+  vcpu.0.req_event.sum=1786609
+  vcpu.0.irq_window_exits.sum=44868
+  vcpu.0.fpu_reload.sum=2576072
+  vcpu.0.io_exits.sum=2425489
+  vcpu.0.signal_exits.sum=1
+  vcpu.0.halt_successful_poll.sum=11970
+  vcpu.0.pf_fixed.sum=86766
+  vcpu.0.irq_injections.sum=230535
+  vcpu.0.directed_yield_attempted.sum=326
+  vcpu.0.halt_exits.sum=132437
+  vcpu.0.pf_spurious.sum=0
+  vcpu.0.halt_poll_invalid.sum=0
+  vcpu.0.exits.sum=5468522
+  vcpu.0.preemption_reported.sum=43483
+  vcpu.0.request_irq_exits.sum=0
+  vcpu.0.guest_mode.cur=no
+  vcpu.0.pf_fast.sum=0
+  vcpu.0.halt_attempted_poll.sum=28345
+  vcpu.0.halt_wakeup.sum=119511
+  vcpu.0.irq_exits.sum=123134
+  vcpu.0.l1d_flush.sum=3375792
+  vcpu.0.hypercalls.sum=326
+  vcpu.0.notify_window_exits.sum=0
+  vcpu.0.invlpg.sum=0
+  vcpu.0.pf_guest.sum=0
+  vcpu.0.host_state_reload.sum=2675447
+  vcpu.0.nested_run.sum=0
+  vcpu.0.halt_poll_fail_ns.sum=364832581
+  vcpu.1.state=1
+  vcpu.1.time=99740000000
+  vcpu.1.wait=0
+  vcpu.1.delay=35827450441
+  vcpu.1.tlb_flush.sum=48149
+  vcpu.1.directed_yield_successful.sum=149
+  vcpu.1.preemption_other.sum=9968
+  vcpu.1.insn_emulation_fail.sum=0
+  vcpu.1.pf_emulate.sum=62
+  vcpu.1.halt_wait_ns.sum=7044124289564
+  vcpu.1.mmio_exits.sum=73893
+  vcpu.1.nmi_injections.sum=0
+  vcpu.1.nmi_window_exits.sum=0
+  vcpu.1.blocking.cur=yes
+  vcpu.1.pf_taken.sum=19455
+  vcpu.1.insn_emulation.sum=81546
+  vcpu.1.halt_poll_success_ns.sum=431783239
+  vcpu.1.pf_mmio_spte_created.sum=62
+  vcpu.1.req_event.sum=465331
+  vcpu.1.irq_window_exits.sum=30318
+  vcpu.1.fpu_reload.sum=334105
+  vcpu.1.io_exits.sum=260366
+  vcpu.1.signal_exits.sum=43
+  vcpu.1.halt_successful_poll.sum=10081
+  vcpu.1.pf_fixed.sum=19356
+  vcpu.1.irq_injections.sum=252944
+  vcpu.1.directed_yield_attempted.sum=233
+  vcpu.1.halt_exits.sum=166873
+  vcpu.1.pf_spurious.sum=1
+  vcpu.1.halt_poll_invalid.sum=0
+  vcpu.1.exits.sum=1297092
+  vcpu.1.preemption_reported.sum=46101
+  vcpu.1.request_irq_exits.sum=0
+  vcpu.1.guest_mode.cur=no
+  vcpu.1.pf_fast.sum=0
+  vcpu.1.halt_attempted_poll.sum=22056
+  vcpu.1.halt_wakeup.sum=155577
+  vcpu.1.irq_exits.sum=126997
+  vcpu.1.l1d_flush.sum=636980
+  vcpu.1.hypercalls.sum=233
+  vcpu.1.notify_window_exits.sum=0
+  vcpu.1.invlpg.sum=0
+  vcpu.1.pf_guest.sum=0
+  vcpu.1.host_state_reload.sum=517086
+  vcpu.1.nested_run.sum=0
+  vcpu.1.halt_poll_fail_ns.sum=177095364
+  net.count=1
+  net.0.name=vnet12
+  net.0.rx.bytes=194
+  net.0.rx.pkts=3
+  net.0.rx.errs=0
+  net.0.rx.drop=380
+  net.0.tx.bytes=0
+  net.0.tx.pkts=0
+  net.0.tx.errs=0
+  net.0.tx.drop=0
+  block.count=2
+  block.0.name=vda
+  block.0.path=/var/lib/libvirt/images/ubuntu-cloud-vm.qcow2
+  block.0.backingIndex=2
+  block.0.rd.reqs=56551
+  block.0.rd.bytes=1537007104
+  block.0.rd.times=65945020582
+  block.0.wr.reqs=12201
+  block.0.wr.bytes=273661952
+  block.0.wr.times=10807026951
+  block.0.fl.reqs=2066
+  block.0.fl.times=9479122446
+  block.0.allocation=337772544
+  block.0.capacity=21474836480
+  block.0.physical=337719296
+  block.1.name=sda
+  block.1.path=/var/lib/libvirt/images/ubuntu-cloud-vm-cloud-init.iso
+  block.1.backingIndex=1
+  block.1.rd.reqs=415
+  block.1.rd.bytes=1404390
+  block.1.rd.times=73240482
+  block.1.wr.reqs=0
+  block.1.wr.bytes=0
+  block.1.wr.times=0
+  block.1.fl.reqs=0
+  block.1.fl.times=0
+  block.1.allocation=0
+  block.1.capacity=374784
+  block.1.physical=376832
+  dirtyrate.calc_status=0
+  dirtyrate.calc_start_time=0
+  dirtyrate.calc_period=0
+  dirtyrate.calc_mode=page-sampling
+  vm.max_mmu_rmap_size.max=0
+  vm.mmu_pde_zapped.sum=0
+  vm.mmu_flooded.sum=0
+  vm.remote_tlb_flush.sum=2
+  vm.remote_tlb_flush_requests.sum=163
+  vm.mmu_unsync.cur=0
+  vm.pages_4k.cur=79646
+  vm.mmu_pte_write.sum=0
+  vm.pages_1g.cur=0
+  vm.pages_2m.cur=58
+  vm.nx_lpage_splits.cur=165
+  vm.mmu_cache_miss.sum=0
+  vm.max_mmu_page_hash_collisions.max=0
+  vm.mmu_shadow_zapped.sum=0
+  vm.mmu_recycled.sum=0
+
+```
+
+### Monitor VM's Virtual NIC stats
+
+```bash
+sudo virsh domifstat ubuntu-cloud-vm vnet0
+```
+
+### &#x20;**Access VM's Filesystem**
+
+```bash
+sudo guestfish --ro -a /var/lib/libvirt/images/ubuntu-cloud-vm.qcow2 -i
+```
+
+## Summary
+
+#### **Summary of Useful Commands**
+
+* **VM Information:** `sudo virsh dominfo ubuntu-cloud-vm`
+* **VM Configuration XML:** `sudo virsh dumpxml ubuntu-cloud-vm`
+* **Network Interfaces:** `sudo virsh domiflist ubuntu-cloud-vm`
+* **IP Address:** `sudo virsh domifaddr ubuntu-cloud-vm`
+* **Disk Information:** `sudo virsh domblklist ubuntu-cloud-vm`, `sudo virsh domblkinfo ubuntu-cloud-vm vda`
+* **Real-Time Stats:** `sudo virsh domstats ubuntu-cloud-vm`
+* **Console Access:** `sudo virsh console ubuntu-cloud-vm`
+* **Interface Stats:** `sudo virsh domifstat ubuntu-cloud-vm vnet0`
