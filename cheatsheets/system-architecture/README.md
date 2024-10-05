@@ -15,3 +15,7 @@ layout:
 
 # system architecture
 
+{% content-ref url="bios-uefi-hardware-settings.md" %}
+[bios-uefi-hardware-settings.md](bios-uefi-hardware-settings.md)
+{% endcontent-ref %}
+

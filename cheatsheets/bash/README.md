@@ -10,8 +10,16 @@ layout:
   outline:
     visible: true
   pagination:
-    visible: true
+    visible: false
 ---
 
 # bash
+
+{% content-ref url="loops.md" %}
+[loops.md](loops.md)
+{% endcontent-ref %}
+
+{% content-ref url="arrays.md" %}
+[arrays.md](arrays.md)
+{% endcontent-ref %}
 

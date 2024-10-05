@@ -1,8 +1,9 @@
 ---
 description: for querying virtual machine information
+icon: rectangle-code
 ---
 
-# useful virsh commands
+# Useful virsh commands
 
 ## virsh
 
