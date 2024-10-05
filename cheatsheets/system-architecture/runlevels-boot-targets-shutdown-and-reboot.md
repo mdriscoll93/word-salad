@@ -3,6 +3,7 @@ description: >-
   learn to shut down or reboot your Linux system, warn users that the system is
   going down, and switch to single-user mode or a more or less restrictive
   runlevel or boot target.
+icon: crosshairs-simple
 layout:
   title:
     visible: true
@@ -11,7 +12,7 @@ layout:
   tableOfContents:
     visible: true
   outline:
-    visible: true
+    visible: false
   pagination:
     visible: false
 ---
