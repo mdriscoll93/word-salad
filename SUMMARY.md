@@ -17,4 +17,5 @@
     * [Runlevels, boot targets, shutdown, and reboot](cheatsheets/system-architecture/runlevels-boot-targets-shutdown-and-reboot.md)
   * [virtualization](cheatsheets/virtualization/README.md)
     * [Useful virsh commands](cheatsheets/virtualization/useful-virsh-commands.md)
-  * [Installation & Package Management](cheatsheets/installation-and-package-management.md)
+  * [Installation & Package Management](cheatsheets/installation-and-package-management/README.md)
+    * [Hard Disk Layout](cheatsheets/installation-and-package-management/hard-disk-layout.md)

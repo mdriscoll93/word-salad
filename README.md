@@ -1,6 +1,6 @@
 ---
-description: for general purpose cheating
 icon: wand-sparkles
+description: for general purpose cheating
 cover: .gitbook/assets/htown.png
 coverY: 78
 layout:
@@ -37,7 +37,7 @@ layout:
 [virtualization](cheatsheets/virtualization/)
 {% endcontent-ref %}
 
-{% content-ref url="cheatsheets/installation-and-package-management.md" %}
-[installation-and-package-management.md](cheatsheets/installation-and-package-management.md)
+{% content-ref url="cheatsheets/installation-and-package-management/" %}
+[installation-and-package-management](cheatsheets/installation-and-package-management/)
 {% endcontent-ref %}
 
