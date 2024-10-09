@@ -23,3 +23,7 @@ layout:
 [hard-disk-layout.md](hard-disk-layout.md)
 {% endcontent-ref %}
 
+{% content-ref url="install-a-boot-manager.md" %}
+[install-a-boot-manager.md](install-a-boot-manager.md)
+{% endcontent-ref %}
+
