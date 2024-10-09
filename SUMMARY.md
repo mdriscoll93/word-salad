@@ -19,3 +19,4 @@
     * [Useful virsh commands](cheatsheets/virtualization/useful-virsh-commands.md)
   * [Installation & Package Management](cheatsheets/installation-and-package-management/README.md)
     * [Hard Disk Layout](cheatsheets/installation-and-package-management/hard-disk-layout.md)
+    * [Install a Boot Manager](cheatsheets/installation-and-package-management/install-a-boot-manager.md)
