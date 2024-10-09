@@ -26,9 +26,9 @@ layout:
 
 A boot manager or boot loader is the intermediate piece of code that helps the hardware and firmware of your system load an operating system for you. This tutorial discusses the PC boot process and the three main boot loaders that are used in Linux:&#x20;
 
-1. GRUB
-2. GRUB2
-3. LILO with MBR formatted disks
+1. **GRUB**
+2. **GRUB2**
+3. **LILO with MBR formatted disks**
 
 The original GRUB, now called GRUB-Legacy is no longer in active development and has largely been replaced by the newer GRUB2. Even commercial distributions such as Red Hat and SUSE Linux Server switched to GRUB2 in 2014. Development of LILO is scheduled to cease at the end of 2015.
 
@@ -47,11 +47,11 @@ This works fine for a system with a single operating system. What happens if you
 The solution lies in using some special code that allows a user to choose which operating system to boot. Examples include:
 
 * **Loadlin**: A DOS executable program that is invoked from a running DOS system to boot a Linux partition. This was popular when setting up a multiboot system was a complex and risky process
-* OS/2 Boot Manager: A program that was installed in a small dedicated partition. The partition was marked active, and the standard MBR boot process started the OS/2 Boot Manager, which has menu from which you can choose which operating system to boot
+* **OS/2 Boot Manager**: A program that was installed in a small dedicated partition. The partition was marked active, and the standard MBR boot process started the OS/2 Boot Manager, which has menu from which you can choose which operating system to boot
 * A smart boot loader: A program that can reside on an operating system partition and is invoked either by the partition boot record of an active partition or by the master boot record. Some common Linux Boot Loaders are:
-  * LILO - the LInux LOader
-  * GRUB - the GRand Unified Boot Loader (now GRUB-Legacy)
-  * GRUB2 - a newer boot loader that is installed in many common distributions
-  * Syslinux - a group of lightweight boot loaders for MS-DOS FAT filesystems (SYSLINUX), network booting (PXELINUX), bootable "El Torito" CD-ROMs (ISOLINUX), and Linux ext2, ext3, and ext4 or btrfs filesystems (EXTLINUX
+  * **LILO** - the LInux LOader
+  * **GRUB** - the GRand Unified Boot Loader (now GRUB-Legacy)
+  * **GRUB2** - a newer boot loader that is installed in many common distributions
+  * **Syslinux** - a group of lightweight boot loaders for MS-DOS FAT filesystems (SYSLINUX), network booting (PXELINUX), bootable "El Torito" CD-ROMs (ISOLINUX), and Linux ext2, ext3, and ext4 or btrfs filesystems (EXTLINUX
 
 Evidently, if you can pass control of the system to some program that has more than 512 bytes of code to accomplish its task, then it isn't too hard to allow booting from logical partitions, or booting from partitions that are not on the boot drive. All of these solutions allow these possibilities, either because they can load a boot record from an arbitrary partition, or because they have some understanding of what file or files to load to start the boot process.
