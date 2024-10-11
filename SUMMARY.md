@@ -20,3 +20,6 @@
   * [Installation & Package Management](cheatsheets/installation-and-package-management/README.md)
     * [Hard Disk Layout](cheatsheets/installation-and-package-management/hard-disk-layout.md)
     * [Install a Boot Manager](cheatsheets/installation-and-package-management/install-a-boot-manager.md)
+* [LFD109x](lfd109x/README.md)
+  * [Git and Revision Control Systems](lfd109x/git-and-revision-control-systems.md)
+  * [Using Git - an Example](lfd109x/using-git-an-example.md)

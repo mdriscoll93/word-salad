@@ -1,8 +1,8 @@
 ---
+icon: boot
 description: >-
   This tutorial helps you understand the boot sequence from BIOS to boot
   completion
-icon: boot
 layout:
   title:
     visible: true
@@ -139,7 +139,7 @@ To influence your system's boot process, you can:
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Interact with the boot loader to select which of several possible configurations to boot or to edit the boot configuration. You learn how to do this for GRUB2 in this tutorial.
 * Pass parameters to the kernel to control the way that your kernel starts the system once it has been loaded by the boot loader.

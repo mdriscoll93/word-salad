@@ -1,9 +1,9 @@
 ---
+icon: browsers
 description: >-
   Determine and configure hardware settings --  cover some common hardware
   settings that you might make on current computers, and explore the commands
   that Linux has for listing and managing hardware.
-icon: browsers
 ---
 
 # BIOS / UEFI Hardware Settings
@@ -41,7 +41,7 @@ If your system supports legacy peripheral interfaces, you might have a place to 
 
 ### F**igure 2. Configuring serial, parallel, and on-board devices with BIOS**
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Your BIOS can also have settings that you can use to boot without a keyboard or mouse. When there is a boot error or maybe a change in configuration (such as the addition of memory), many systems — particularly older ones — require you to press a key to enter BIOS setup. What happens if the system has no keyboard?
 
