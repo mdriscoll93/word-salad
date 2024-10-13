@@ -8,6 +8,7 @@
       * [Persistent network configuration](cheatsheets/network-tips/intro-to-iproute2/persistent-network-configuration.md)
       * [Configure client-side DNS](cheatsheets/network-tips/intro-to-iproute2/configure-client-side-dns.md)
     * [Comparison of IPv4 and IPv6](cheatsheets/network-tips/comparison-of-ipv4-and-ipv6.md)
+    * [Trunk two switches using 802.1q VLANS](cheatsheets/network-tips/trunk-two-switches-using-802.1q-vlans.md)
   * [bash](cheatsheets/bash/README.md)
     * [Loops](cheatsheets/bash/loops.md)
     * [Arrays](cheatsheets/bash/arrays.md)

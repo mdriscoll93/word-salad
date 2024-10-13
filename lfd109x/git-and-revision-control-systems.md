@@ -28,7 +28,7 @@ It is also possible to go in the opposite direction, to export a Git project to 
 
 You might do this because you want to switch your revision system to one of the other choices. More likely, you would do this because you need to mirror your Git repository, so those who have access only to one of the older systems can synchronize with it. We will not give any details on this process.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p><strong>Different Systems: RCS > CVS > SVN</strong></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p><strong>Different Systems: RCS > CVS > SVN</strong></p></figcaption></figure>
 
 ### Revision Control Systems (RCS)
 

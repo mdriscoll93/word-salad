@@ -41,7 +41,7 @@ If your system supports legacy peripheral interfaces, you might have a place to 
 
 ### F**igure 2. Configuring serial, parallel, and on-board devices with BIOS**
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Your BIOS can also have settings that you can use to boot without a keyboard or mouse. When there is a boot error or maybe a change in configuration (such as the addition of memory), many systems — particularly older ones — require you to press a key to enter BIOS setup. What happens if the system has no keyboard?
 
@@ -50,15 +50,15 @@ Your BIOS can also have settings that you can use to boot without a keyboard or 
 
 ### **Figure 3. Disabling keyboard or keyboard boot error with BIOS**
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Another important setting that you might need to make is the order of boot devices.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Another important setting that you might need to make is the order of boot devices.</p></figcaption></figure>
 
 ### Figure 4. Configuring boot device order with BIOS
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>For UEFI systems, many settings are similar to those for traditional BIOS, including date, time, and whether on-board devices are enabled or not</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>For UEFI systems, many settings are similar to those for traditional BIOS, including date, time, and whether on-board devices are enabled or not</p></figcaption></figure>
 
 ### Figure 5. Configuring date, time, and on-board devices with UEFI
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 One major difference with UEFI systems is, of course, support for UEFI booting. Your system might support UEFI-only booting or it might also support legacy BIOS-like booting.
 
@@ -66,7 +66,7 @@ When I choose Legacy Support, I can boot a legacy system or a UEFI system. My sy
 
 ### Figure 6. Choosing UEFI boot mode
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 If you select UEFI-only booting, then you will probably not see some items that are related to legacy support, such as the legacy USB support option that you saw in Figure 5
 
