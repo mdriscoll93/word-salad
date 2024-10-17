@@ -547,11 +547,11 @@ Figure 2 shows the partitions on the USB drive that contain our LVM partitions. 
 
 #### Figure 1. Using gparted to display /dev/sda with several partition types
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 #### Figure 2. Using gparted to display /dev/sde with several more partition types
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 As you saw previously, the MBR does not contain partition table entries for the logical partitions; it defines a container that looks to the rest of the system something like a special partition. The logical partitions are defined within this container. So how does this work?
 

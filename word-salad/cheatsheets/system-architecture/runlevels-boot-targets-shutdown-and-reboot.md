@@ -107,15 +107,15 @@ To bring this system up in runlevel 3, wait till the boot entries are displayed,
 
 Figure 1. Selecting a boot choice in GRUB
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption><p>In this example, you should now see the root, kernel, and initrd lines displayed. Move the cursor to the line starting with "kernel" and press 'e' to edit the line. The GRUB screen on our CentOS 6 system now looks like Figure 2.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption><p>In this example, you should now see the root, kernel, and initrd lines displayed. Move the cursor to the line starting with "kernel" and press 'e' to edit the line. The GRUB screen on our CentOS 6 system now looks like Figure 2.</p></figcaption></figure>
 
 Figure 2. Selecting the kernel entry for editing
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Finally, move the cursor to the end of the line, and add a space and the digit '3'. You may remove 'quiet' if you wish, or modify any other parameters as needed. The GRUB screen on our CentOS 6 system now looks like Figure 3.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Finally, move the cursor to the end of the line, and add a space and the digit '3'. You may remove 'quiet' if you wish, or modify any other parameters as needed. The GRUB screen on our CentOS 6 system now looks like Figure 3.</p></figcaption></figure>
 
 Figure 3. Setting the starting runlevel to 3
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p>Finally, press <strong>Enter</strong> to save the changes, then type 'b' to boot the system.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption><p>Finally, press <strong>Enter</strong> to save the changes, then type 'b' to boot the system.</p></figcaption></figure>
 
 #### Notes:
 

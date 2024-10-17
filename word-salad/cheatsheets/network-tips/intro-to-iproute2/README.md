@@ -1,6 +1,6 @@
 ---
 description: learn to solve problems with the iproute2 toolset
-cover: ../../../.gitbook/assets/lofi-dc.jpeg
+cover: ../../../../.gitbook/assets/lofi-dc.jpeg
 coverY: -52
 layout:
   cover:

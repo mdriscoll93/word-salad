@@ -1,7 +1,7 @@
 ---
 icon: network-wired
 description: Linux Networking Fundamentals
-cover: ../../.gitbook/assets/28282d_solid_color_background.png
+cover: ../../../.gitbook/assets/28282d_solid_color_background.png
 coverY: 481
 layout:
   cover:

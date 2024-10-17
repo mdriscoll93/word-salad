@@ -137,9 +137,9 @@ To influence your system's boot process, you can:
 * Figure 2 illustrates how this looks on one of my UEFI systems. The method for setting up boot devices and selecting a boot device at startup is specific to your system and its BIOS. It is also beyond the scope of this LPI objective's requirements, so consult your system documentation.\
 
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Interact with the boot loader to select which of several possible configurations to boot or to edit the boot configuration. You learn how to do this for GRUB2 in this tutorial.
 * Pass parameters to the kernel to control the way that your kernel starts the system once it has been loaded by the boot loader.
@@ -178,7 +178,7 @@ When GRUB2 reads the configuration file, it normally presents a menu such as the
 
 #### Figure 3. Selecting a boot choice in GRUB2
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 When the menu is displayed, you can press Enter to boot the selected entry immediately, or you can press another key to stop the timeout. You can then highlight and boot another entry, enter `e` to edit a selected entry, or `c` to enter a GRUB2 command prompt. **Note:** if your timeout is set to 0, GRUB2 proceeds immediately to boot your system. In this case, you need to boot rescue media from another device.
 
@@ -186,7 +186,7 @@ When you use GRUB2 on a UEFI system, you will usually have an additional menu en
 
 #### Figure 4. Using GRUB2 to access the UEFI interface
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 In addition to using the UEFI firmware itself to configure the default boot order, you can use the `efibootmgr` command to check the boot order, set the entry to boot on the next reboot, or reset the default order. Listing 2 shows the commands needed to display the boot order, reset the default order so that Fedora (0000) is chosen first, and finally set the next boot to Ubuntu (0002).
 
@@ -254,7 +254,7 @@ Suppose you want to modify kernel parameters or add new ones or otherwise change
 
 #### Figure 5. Editing the Fedora 22 GRUB2 menu entry
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 The most common argument that is passed to the init process is the word 'single' which instructs it to boot the computer in single user mode, and not launch all the usual daemons. You typically use this for some kind of rescue operation. If you move the cursor down, the screen will scroll and you will see the line that starts with 'linux16' and ends with 'ro rhgb quiet'.&#x20;
 
@@ -262,7 +262,7 @@ For our example, we'll position the cursor at the end of this line and then use 
 
 #### Figure 6. Setting Fedora 22 to boot in single user mode
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Now press Ctrl-x to boot the system into single user mode. After several messages scroll by, your screen has a few lines like Listing 3.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Now press Ctrl-x to boot the system into single user mode. After several messages scroll by, your screen has a few lines like Listing 3.</p></figcaption></figure>
 
 You can now give the root password and do whatever you need to rescue the system. You can then reboot, or continue into your normal mode of running.
 

@@ -1,8 +1,8 @@
 ---
-icon: wand-sparkles
-description: for general purpose cheating
-cover: .gitbook/assets/htown.png
-coverY: 78
+description: please enjoy responsibly
+icon: salad
+cover: .gitbook/assets/tall_corn_1.jpg
+coverY: -152.52266666666665
 layout:
   cover:
     visible: true
@@ -14,30 +14,18 @@ layout:
   tableOfContents:
     visible: true
   outline:
-    visible: true
+    visible: false
   pagination:
     visible: false
 ---
 
-# cheatsheets
+# Word Salad
 
-{% content-ref url="cheatsheets/network-tips/" %}
-[network-tips](cheatsheets/network-tips/)
+{% content-ref url="word-salad/cheatsheets/" %}
+[cheatsheets](word-salad/cheatsheets/)
 {% endcontent-ref %}
 
-{% content-ref url="cheatsheets/bash/" %}
-[bash](cheatsheets/bash/)
-{% endcontent-ref %}
-
-{% content-ref url="cheatsheets/system-architecture/" %}
-[system-architecture](cheatsheets/system-architecture/)
-{% endcontent-ref %}
-
-{% content-ref url="cheatsheets/virtualization/" %}
-[virtualization](cheatsheets/virtualization/)
-{% endcontent-ref %}
-
-{% content-ref url="cheatsheets/installation-and-package-management/" %}
-[installation-and-package-management](cheatsheets/installation-and-package-management/)
+{% content-ref url="word-salad/lfd109x/" %}
+[lfd109x](word-salad/lfd109x/)
 {% endcontent-ref %}
 
