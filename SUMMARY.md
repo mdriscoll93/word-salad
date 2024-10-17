@@ -10,6 +10,7 @@
         * [Configure client-side DNS](word-salad/cheatsheets/network-tips/intro-to-iproute2/configure-client-side-dns.md)
       * [Comparison of IPv4 and IPv6](word-salad/cheatsheets/network-tips/comparison-of-ipv4-and-ipv6.md)
       * [Trunk two switches using 802.1q VLANS](word-salad/cheatsheets/network-tips/trunk-two-switches-using-802.1q-vlans.md)
+      * [Diagrams](word-salad/cheatsheets/network-tips/diagrams.md)
     * [bash](word-salad/cheatsheets/bash/README.md)
       * [Loops](word-salad/cheatsheets/bash/loops.md)
       * [Arrays](word-salad/cheatsheets/bash/arrays.md)
