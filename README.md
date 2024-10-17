@@ -2,11 +2,11 @@
 icon: salad
 description: please enjoy responsibly
 cover: .gitbook/assets/tall_corn_1.jpg
-coverY: -405.43999999999994
+coverY: -506.5378851297323
 layout:
   cover:
     visible: true
-    size: hero
+    size: full
   title:
     visible: true
   description:
