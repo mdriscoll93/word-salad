@@ -1,8 +1,8 @@
 ---
-description: please enjoy responsibly
 icon: salad
+description: please enjoy responsibly
 cover: .gitbook/assets/tall_corn_1.jpg
-coverY: -152.52266666666665
+coverY: -405.43999999999994
 layout:
   cover:
     visible: true
