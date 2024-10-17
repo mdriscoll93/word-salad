@@ -1,12 +1,12 @@
 ---
 icon: network-wired
 description: Linux Networking Fundamentals
-cover: ../../../.gitbook/assets/28282d_solid_color_background.png
-coverY: 481
+cover: ../../../.gitbook/assets/9kgo00zeq3q21.png
+coverY: 0
 layout:
   cover:
     visible: true
-    size: full
+    size: hero
   title:
     visible: true
   description:
@@ -34,5 +34,5 @@ layout:
 [comparison-of-ipv4-and-ipv6.md](comparison-of-ipv4-and-ipv6.md)
 {% endcontent-ref %}
 
-
+<figure><img src="../../../.gitbook/assets/Tqa2Dbx.jpeg" alt=""><figcaption></figcaption></figure>
 

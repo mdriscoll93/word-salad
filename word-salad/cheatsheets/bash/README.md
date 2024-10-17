@@ -1,6 +1,12 @@
 ---
 icon: terminal
+description: bourne again shell epistemology
+cover: ../../../.gitbook/assets/unix_simple.png
+coverY: -604.2986666666666
 layout:
+  cover:
+    visible: true
+    size: hero
   title:
     visible: true
   description:
