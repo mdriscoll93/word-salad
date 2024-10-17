@@ -27,3 +27,4 @@
   * [Git Concepts and Architecture](lfd109x/git-concepts-and-architecture.md)
   * [Managing Files and the Index](lfd109x/managing-files-and-the-index.md)
   * [Commits](lfd109x/commits.md)
+  * [Branches](lfd109x/branches.md)
