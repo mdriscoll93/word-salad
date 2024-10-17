@@ -24,3 +24,6 @@
 * [LFD109x](lfd109x/README.md)
   * [Git and Revision Control Systems](lfd109x/git-and-revision-control-systems.md)
   * [Using Git - an Example](lfd109x/using-git-an-example.md)
+  * [Git Concepts and Architecture](lfd109x/git-concepts-and-architecture.md)
+  * [Managing Files and the Index](lfd109x/managing-files-and-the-index.md)
+  * [Commits](lfd109x/commits.md)

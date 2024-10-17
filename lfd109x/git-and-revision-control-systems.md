@@ -40,8 +40,6 @@ Conventionally, a sub-directory named **RCS** (or **rcs**) is situated under the
 
 RCS forces developers to work in a serial fashion:
 
-
-
 * When a file is unlocked, no one can commit changes to a file, but the lock is available to anyone with access to the RCS repository
 * When a file is locked, only the holder of the lock can commit changes to the file
 
@@ -92,12 +90,9 @@ Technically, Git is not a source control management system in the usual sense, a
 
 The object database contains objects of three varieties.
 
-* Blobs\
-  Chunks of binary data containing file contents.
-* Trees\
-  Sets of blobs including file names and attributes, giving the directory structure.
-* Commits\
-  Changesets describing tree snapshots.
+* Blobs: Chunks of binary data containing file contents.
+* Trees: Sets of blobs including file names and attributes, giving the directory structure.
+* Commits: Changesets describing tree snapshots.
 
 The directory cache captures the state of the directory tree.
 
@@ -121,50 +116,58 @@ Make sure you have the appropriate subversion software installed to do the follo
 
 The easiest way to get a copy, or clone, of a Subversion project is to use **git svn**. To obtain a copy of part of the Subversion repository itself, you can do:
 
-**$ git svn clone https://svn.apache.org/repos/asf/subversion/trunk/doc my\_svn\_repo**
+```bash
+git svn clone https://svn.apache.org/repos/asf/subversion/trunk/doc my_svn_repo
+```
 
 where we have chosen only the **doc** module of Subversion in order to keep things small.
 
 However, this can take a long time as it gathers the entire history of the project and sometimes hangs. It is easier for learning purposes to just get the most recent version (which for Git we would call a _shallow clone_). There is no easy way to just say give me the last version with Subversion; we need an actual release number, which we can get with:
 
-**$ svn log https://svn.apache.org/repos/asf/subversion/trunk/doc | head**\
-**------------------------------------------------------------------------**\
-**r1663949 | brane | 2015-03-04 05:55:13 -0600 (Wed, 04 Mar 2015) | 1 line**
-
-**\* doc/svn-square.jpg: Copy the logo used by Doxygen from the site tree.**\
-**------------------------------------------------------------------------**\
-**r1663948 | brane | 2015-03-04 05:53:09 -0600 (Wed, 04 Mar 2015) | 1 line**\
-**...**
+```bash
+svn log https://svn.apache.org/repos/asf/subversion/trunk/doc | head
+------------------------------------------------------------------------
+r1663949 | brane | 2015-03-04 05:55:13 -0600 (Wed, 04 Mar 2015) | 1 line
+* doc/svn-square.jpg: Copy the logo used by Doxygen from the site tree.
+------------------------------------------------------------------------
+r1663948 | brane | 2015-03-04 05:53:09 -0600 (Wed, 04 Mar 2015) | 1 line
+...
+```
 
 We can then pick just the latest release for the shallow clone:
 
-**$ git svn clone -r1663949 https://svn.apache.org/repos/asf/subversion/trunk/doc my\_svn\_repo**\
-**Initialized empty Git repository in /tmp/SVN/my\_svn\_repo/.git/**\
-&#x20;       **A       doxygen.conf**\
-&#x20;       **A       svn-square.jpg**\
-&#x20;       **A       programmer/gtest-guide.txt**\
-&#x20;       **A       programmer/WritingChangeLogs.txt**\
-&#x20;       **A       README**\
-&#x20;       **A       user/svn-best-practices.html**\
-&#x20;       **A       user/lj\_article.txt**\
-&#x20;       **A       user/cvs-crossover-guide.html**\
-**r1663949 = f2f1312fe65123c1be0935421d05cc862d0d008e (refs/remotes/git-svn)**\
-**Checked out HEAD:**\
-&#x20; **https://svn.apache.org/repos/asf/subversion/trunk/doc r1663949**
+```bash
+git svn clone -r1663949 https://svn.apache.org/repos/asf/subversion/trunk/doc my_svn_repo
+Initialized empty Git repository in /tmp/SVN/my_svn_repo/.git/
+        A       doxygen.conf
+        A       svn-square.jpg
+        A       programmer/gtest-guide.txt
+        A       programmer/WritingChangeLogs.txt
+        A       README
+        A       user/svn-best-practices.html
+        A       user/lj_article.txt
+        A       user/cvs-crossover-guide.html
+r1663949 = f2f1312fe65123c1be0935421d05cc862d0d008e (refs/remotes/git-svn)
+Checked out HEAD:
+  https://svn.apache.org/repos/asf/subversion/trunk/doc r1663949
+```
 
 This creates a Git repository under the **my\_svn\_repo** directory, which you can examine. Notice all the Git information goes in the **.git** subdirectory.
 
 If you want to compare with original Subversion repository, you can bring that down with:
 
-**$ svn checkout https://svn.apache.org/repos/asf/subversion/trunk/doc doc**\
-**....**
+```bash
+svn checkout https://svn.apache.org/repos/asf/subversion/trunk/doc doc
+....
+```
 
 where the repository information will go under **.svn** directories.
 
 Compare:
 
-**$ diff -qr my\_svn\_repo/ doc/**\
-**Only in my\_svn\_repo/: .git**\
-**Only in doc/: .svn**
+```bash
+$ diff -qr my_svn_repo/ doc/
+Only in my_svn_repo/: .git
+Only in doc/: .svn
+```
 
-##
