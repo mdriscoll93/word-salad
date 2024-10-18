@@ -154,8 +154,8 @@ here we will demonstrate how to add an IP address to an existing link and how to
 \
 In this scenario the Fedora system has a wifi adapter with an associated IP address of 192.168.3.21. The IPv4 address and route info is shown below:
 
-```
-[[ian@ianattic5-f31 ~]$ ip -4 a show wlp8s0u2
+```bash
+[ian@ianattic5-f31 ~]$ ip -4 a show wlp8s0u2
 3: wlp8s0u2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1450 qdisc mq state UP group default qlen 1000
     inet 192.168.3.21/24 brd 192.168.3.255 scope global dynamic noprefixroute wlp8s0u2
        valid_lft 53458sec preferred_lft 53458sec
@@ -173,7 +173,7 @@ It is not possible to change the metric using the IP command. So, one way to do 
 
 First, I'll add an address and then see what I accomplished as shown below:
 
-```
+```bash
 [ian@ianattic5-f31 ~]$ sudo ip addr add 192.168.3.30/24 dev wlp8s0u2
 [ian@ianattic5-f31 ~]$ ip -4 a show wlp8s0u2
 3: wlp8s0u2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1450 qdisc mq state UP group default qlen 1000
@@ -189,7 +189,7 @@ The following shows how to delete the address just added and add it again with a
 
 You can use either `+` or `-` for this purpose or you can spell out the broadcast address in full dotted-quad format.
 
-```
+```bash
 [ian@ianattic5-f31 ~]$ sudo ip addr del 192.168.3.30/24  dev wlp8s0u2
 [ian@ianattic5-f31 ~]$ sudo ip addr add 192.168.3.30/24 brd + metric 550 dev wlp8s0u2
 [ian@ianattic5-f31 ~]$ ip -4 a show wlp8s0u2
@@ -206,7 +206,7 @@ Depending on the settings of certain `sysctl` variables secondary IPv4 addresses
 
 The default values may vary by Linux distribution. On the Ubuntu system, I am using the `sysctl` value related to promoting secondaries are shown in output below:
 
-```
+```bash
 ian@attic4-u18:~$ sudo sysctl -a --pattern "net.ipv4.*_secondaries"
 net.ipv4.conf.all.promote_secondaries = 1
 net.ipv4.conf.default.promote_secondaries = 0
@@ -217,8 +217,9 @@ net.ipv4.conf.lo.promote_secondaries = 0
 
 Now we will delete 192.168.3.21 and show you how the address I added is promoted to primary and a link scope route was automatically added with metric 550, derived from the value I specified when I added the address.
 
-```
-[ian@ianattic5-f31 ~]$ sudo ip addr del 192.168.3.21/24 dev wlp8s0u2[ian@ianattic5-f31 ~]$ ip -4 addr show wlp8s0u2
+```basic
+[ian@ianattic5-f31 ~]$ sudo ip addr del 192.168.3.21/24 dev wlp8s0u2
+[ian@ianattic5-f31 ~]$ ip -4 addr show wlp8s0u2
 3: wlp8s0u2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1450 qdisc mq state UP group default qlen 1000
     inet 192.168.3.30/24 metric 550 brd 192.168.3.255 scope global wlp8s0u2
        valid_lft forever preferred_lft forever
@@ -232,7 +233,7 @@ default via 192.168.3.1 dev wlp8s0u2 proto dhcp metric 600
 
 These changes do not update the default route over the wlp8s0u2 which still has the original metric of 600. You cannot change the metric on a route using the ip command. You have to delete the route and add it again. The addition does not inherit the metric value from the address so you need to specify it explicitly as shown below:
 
-```
+```bash
 [ian@ianattic5-f31 ~]$ sudo ip route del default via 192.168.3.1
 [ian@ianattic5-f31 ~]$ sudo ip route add default via 192.168.3.1 metric 550
 [ian@ianattic5-f31 ~]$ ip -4 route
