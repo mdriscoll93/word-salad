@@ -1,5 +1,6 @@
 ---
 description: Chapter 7.
+icon: code-commit
 ---
 
 # Commits

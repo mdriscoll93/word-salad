@@ -1,4 +1,5 @@
 ---
+icon: square-git
 layout:
   title:
     visible: true

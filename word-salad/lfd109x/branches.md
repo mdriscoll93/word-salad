@@ -1,5 +1,6 @@
 ---
 description: Chapter 8.
+icon: code-branch
 layout:
   title:
     visible: true

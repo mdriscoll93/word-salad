@@ -1,5 +1,6 @@
 ---
 description: Chapter 5.
+icon: git
 ---
 
 # Git Concepts and Architecture

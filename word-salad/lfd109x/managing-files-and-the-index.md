@@ -1,5 +1,6 @@
 ---
 description: Chapter 6.
+icon: diagram-venn
 layout:
   title:
     visible: true
