@@ -14,7 +14,7 @@ layout:
   tableOfContents:
     visible: true
   outline:
-    visible: false
+    visible: true
   pagination:
     visible: false
 ---
@@ -31,6 +31,14 @@ layout:
 >
 > In-text citation: (Stallman 2002, 38)
 
+## :notebook\_with\_decorative\_cover: What is this?
+
+It is a collection of various Bashisms, one-liners, scriptlets, and general-purpose hacks that a former manager, colleague, person, et al. probably taught me.
+
+In other words, these are my personal notes - [the ones I am not too embarrassed to share](#user-content-fn-1)[^1].&#x20;
+
+
+
 {% content-ref url="word-salad/cheatsheets/" %}
 [cheatsheets](word-salad/cheatsheets/)
 {% endcontent-ref %}
@@ -43,3 +51,6 @@ layout:
 
 
 
+
+
+[^1]: This statement is subject to change.

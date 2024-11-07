@@ -25,7 +25,7 @@ layout:
 [loops.md](loops.md)
 {% endcontent-ref %}
 
-{% content-ref url="arrays.md" %}
-[arrays.md](arrays.md)
+{% content-ref url="arrays/" %}
+[arrays](arrays/)
 {% endcontent-ref %}
 
