@@ -25,6 +25,7 @@
     * [Installation & Package Management](word-salad/cheatsheets/installation-and-package-management/README.md)
       * [Hard Disk Layout](word-salad/cheatsheets/installation-and-package-management/hard-disk-layout.md)
       * [Install a Boot Manager](word-salad/cheatsheets/installation-and-package-management/install-a-boot-manager.md)
+      * [Manage Shared Libraries](word-salad/cheatsheets/installation-and-package-management/manage-shared-libraries.md)
   * [LFD109x](word-salad/lfd109x/README.md)
     * [Git and Revision Control Systems](word-salad/lfd109x/git-and-revision-control-systems.md)
     * [Using Git - an Example](word-salad/lfd109x/using-git-an-example.md)
