@@ -34,3 +34,4 @@
     * [Commits](word-salad/lfd109x/commits.md)
     * [Branches](word-salad/lfd109x/branches.md)
     * [Diffs](word-salad/lfd109x/diffs.md)
+    * [Merges](word-salad/lfd109x/merges.md)
