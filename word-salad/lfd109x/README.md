@@ -49,3 +49,7 @@ layout:
 [diffs.md](diffs.md)
 {% endcontent-ref %}
 
+{% content-ref url="merges.md" %}
+[merges.md](merges.md)
+{% endcontent-ref %}
+
