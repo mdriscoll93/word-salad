@@ -178,6 +178,219 @@ If you are doing merging rather than rebasing other problems can arise, especial
 
 <table data-full-width="true"><thead><tr><th>Command</th><th>Source Files</th><th>Index</th><th>Commit Chain</th><th>References</th></tr></thead><tbody><tr><td><code>git rebase</code></td><td>Unchanged</td><td>Unchanged</td><td>Parent branch commit moved to a different commit</td><td>Unchanged</td></tr></tbody></table>
 
+#### Review Lab 10.1 - Resolving Conflicts while Merging
 
+1. Either begin with the `main` and `devel` repositories from the previous session on branches, or recreate them.
+
+````bash
+# Initialize the repository and put our name and email in the .config file.
+
+echo -e "\n\n********* CREATING THE REPOSITORY AND CONFIGURING IT\n\n"
+
+rm -rf git-test ; mkdir git-test ; cd git-test
+git init
+git config user.name "A Smart Guy"
+git config user.email "asmartguy@linux.com"
+
+echo -e "\n\n********* CREATING A COUPLE OF FILES AND ADDING THEM TO THE PROJECT AND COMMITTING\n\n"
+
+# Create a couple of files and add them to the project, and then commit.
+
+echo file1 > file1
+echo file2 > file2
+git add file1 file2
+git commit . -s -m "This is our first commit"
+
+# Create a new development branch.
+
+echo -e "\n\n**************** CREATING A NEW BRANCH, devel ***\n\n"
+
+git branch devel
+
+# Check out the new branch.
+
+echo -e "\n\n*************** CHECKOUT BRANCH devel ****\n\n"
+
+git checkout devel
+
+# Modify a file and add a new one.
+
+echo another line >> file1
+echo file3 >> file3
+
+git add file1 file3
+
+echo -e "\n\n************* DIFFING\n\n"
+git diff
+
+echo -e "\n\n************* RECOMITTING\n\n"
+
+# Now get it all in with another commit.
+
+git commit . -s -m "This is a commit in the devel branch"
+
+# List files.
+
+echo -e "\n\nlist files, then git ls-files\n\n"
+
+ls -l
+git ls-files
+
+# Now check out the original branch.
+
+echo -e "\n\n************ LIST BRANCHES AND CHECKOUT main **\n\n"
+
+git branch
+git checkout main
+
+# List files.
+
+echo -e "\n\n***************** list files, then git ls-files\n\n"
+
+ls -l
+git ls-files
+
+echo -e "\n\n***************** SHOW THE BRANCH\n\n"
+```
+````
+
+2. Make modifications in the `main` branch that conflict with those in the `devel` branch. Commit them and then use `git merge` to merge the `devel` branch into the `main` branch.
+
+```bash
+git branch
+
+# Modify some stuff in the original branch to conflict with devel.
+
+echo -e "\n\n*************** MODIFYING MAIN BRANCH AND COMMITTING\n\n"
+
+echo different content >> file1
+
+# Add and recommit.
+
+git add file1
+git commit -s -m"a re-modification"
+
+git diff main devel
+
+# Try to do a merge.
+
+echo "\n\n************** TRYING TO DO A MERGE \n\n"
+
+git merge devel
+
+echo "\n\n************* THE MERGE FAILED ****\n\n"
+echo "\n\n************* FIX file1 and then add and commit\n"
+echo "\n\n************ IN another window, edit the file and type anything here\n\n"
+read something
+```
+
+3. Resolve the conflicts, either by doing a `git reset` and modifying either of the branches, or by modifying the conflicted files and then committing once again.
+
+```bash
+git add file1
+git commit -s -m"finally got it right"
+
+git ls-files
+git diff
+git branch
+```
+
+{% hint style="success" %}
+You can download a script with the above steps from `s_10/lab_conflict.sh`
+{% endhint %}
+
+#### Review Lab 10.2 - Rebasing
+
+1. After you have produced a development branch, make some changes to the `main` branch and recommit.
+
+```bash
+# repeat the first step from the previous lab
+```
+
+2. Do `git log` on the `devel` branch to show the history of commits.
+
+<pre class="language-bash"><code class="lang-bash">git branch
+
+<strong># Diff the branches.
+</strong>
+echo -e "\n\n****************** DIFFING THE BRANCHES ****\n\n"
+
+git diff main devel
+
+# Get a log of the devel branch.
+
+echo -e "\n\n****************** git log on devel branch *** \n\n"
+
+git checkout devel
+git log
+</code></pre>
+
+3. Rebase the development branch, using `git rebase`, off the modified **main** branch.
+
+```bash
+# Make a new change to main branch.
+
+echo -e "\n\n****************** Make a new change to main branch and commit\n\n"
+git checkout main
+echo something >> file4
+git add file4
+git commit -s -m"a new commit to the main branch"
+
+# Do the rebase.
+
+echo -e "\n\n******************* REBASING **********\n\n"
+
+git rebase main devel
+
+git branch
+git ls-files
+
+# Diff the branches
+
+echo -e "\n\n****************** DIFFING THE BRANCHES ****\n\n"
+
+git diff main devel
+```
+
+4. Once more, do `git log` on the **devel** branch to show the history of commits, and note the difference.
+
+```bash
+# Get a log of the devel branch.
+
+echo -e "\n\n****************** git log on devel branch *** \n\n"
+
+git checkout devel
+git log
+```
+
+{% hint style="success" %}
+You can download a script with the above steps from `s_10/lab_rebase.sh`
+{% endhint %}
+
+#### Knowledge Check 10.2
+
+1. Which procedure does a better job of preserving a project's history?
+   * [x] [`git merge`](#user-content-fn-2)[^2]
+   * [ ] [`git rebase`](#user-content-fn-3)[^3]
+2. You have made changes and after a failed merge command as git merge devel, you realize you need to reconstruct your main branch to the state it was before the failed merge, but keeping any uncommitted changes to the working tree. You could do:
+   * [ ] `git revert --hard`
+   * [x] [`git reset`](#user-content-fn-4)[^4]
+   * [ ] [`git reset --hard`](#user-content-fn-5)[^5]
+   * [ ] `git status --reset`
+3. You have made changes and after a failed merge command as `git merge devel`, you realize you need to reconstruct your main branch to the state it was before the failed merge, discarding any uncommitted changes to the working tree. You could do:
+   * [ ] `git revert --hard`
+   * [ ] `git reset`
+   * [x] [`git reset --hard`](#user-content-fn-6)[^6]
+   * [ ] `git status --reset`
 
 [^1]: The description of git rebasing as having an "Orwellian nature" is a metaphorical way of expressing how rebasing can alter the history of a Git repository. This reference to George Orwell's works, particularly "1984," highlights the concept of changing past events—akin to how history is manipulated in the novel.
+
+[^2]: This method combines the histories of diverged branches into a single branch, usually creating a new "merge commit" that ties together the histories of both branches. This merge commit retains the context of the branch development, including who made specific changes and when. It provides a clear, albeit sometimes complex, view of the project's history.
+
+[^3]: While rebasing can make the project history cleaner by placing all new commits at the tip of the branch, it rewrites the history by creating new commits for each commit in the original branch. This can obscure the true chronological order of changes and make it harder to trace back to original decisions and changes.
+
+[^4]: `git reset` (or `git reset --mixed`, which is the default) resets the staging index but keeps your working directory unchanged. This is the correct choice if you want to keep your modifications in the working tree after undoing the merge.
+
+[^5]: `git reset --hard` would discard all your changes, resetting both the staging area and working directory to match the `HEAD`.
+
+[^6]: This command resets the `HEAD` of your branch to the last commit before the merge and also resets the staging area and working directory to match this last commit, discarding any uncommitted changes. This effectively reverts your project's state to what it was before the failed merge while removing all uncommitted changes.
