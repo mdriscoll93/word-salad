@@ -3,6 +3,7 @@ description: >-
   While Git is very powerful, and graphical interfaces such as GitHub may be
   very useful, more complicated workflows can benefit from the use of tools such
   as Gerrit, which we will now discuss.
+icon: plus-minus
 ---
 
 # Advanced Git Interfaces: Gerrit

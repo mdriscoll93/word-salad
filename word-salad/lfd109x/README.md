@@ -61,3 +61,7 @@ layout:
 [patches.md](patches.md)
 {% endcontent-ref %}
 
+{% content-ref url="advanced-git-interfaces-gerrit.md" %}
+[advanced-git-interfaces-gerrit.md](advanced-git-interfaces-gerrit.md)
+{% endcontent-ref %}
+
