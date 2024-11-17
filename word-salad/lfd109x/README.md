@@ -57,3 +57,7 @@ layout:
 [managing-local-and-remote-repositories.md](managing-local-and-remote-repositories.md)
 {% endcontent-ref %}
 
+{% content-ref url="patches.md" %}
+[patches.md](patches.md)
+{% endcontent-ref %}
+

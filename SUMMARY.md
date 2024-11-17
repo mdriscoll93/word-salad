@@ -37,3 +37,4 @@
     * [Merges](word-salad/lfd109x/merges.md)
     * [Managing Local and Remote Repositories](word-salad/lfd109x/managing-local-and-remote-repositories.md)
     * [Patches](word-salad/lfd109x/patches.md)
+    * [Advanced Git Interfaces: Gerrit](word-salad/lfd109x/advanced-git-interfaces-gerrit.md)
