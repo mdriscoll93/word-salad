@@ -35,3 +35,4 @@
     * [Branches](word-salad/lfd109x/branches.md)
     * [Diffs](word-salad/lfd109x/diffs.md)
     * [Merges](word-salad/lfd109x/merges.md)
+    * [Managing Local and Remote Repositories](word-salad/lfd109x/managing-local-and-remote-repositories.md)
