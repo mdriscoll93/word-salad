@@ -53,3 +53,7 @@ layout:
 [merges.md](merges.md)
 {% endcontent-ref %}
 
+{% content-ref url="managing-local-and-remote-repositories.md" %}
+[managing-local-and-remote-repositories.md](managing-local-and-remote-repositories.md)
+{% endcontent-ref %}
+
