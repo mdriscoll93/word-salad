@@ -23,6 +23,7 @@
       * [Runlevels, boot targets, shutdown, and reboot](word-salad/cheatsheets/system-architecture/runlevels-boot-targets-shutdown-and-reboot.md)
     * [virtualization](word-salad/cheatsheets/virtualization/README.md)
       * [Useful virsh commands](word-salad/cheatsheets/virtualization/useful-virsh-commands.md)
+      * [Custom NAT-based libvirt networks](word-salad/cheatsheets/virtualization/custom-nat-based-libvirt-networks.md)
     * [Installation & Package Management](word-salad/cheatsheets/installation-and-package-management/README.md)
       * [Hard Disk Layout](word-salad/cheatsheets/installation-and-package-management/hard-disk-layout.md)
       * [Install a Boot Manager](word-salad/cheatsheets/installation-and-package-management/install-a-boot-manager.md)
