@@ -16,6 +16,7 @@
       * [Arrays](word-salad/cheatsheets/bash/arrays/README.md)
         * [Array comparison](word-salad/cheatsheets/bash/arrays/array-comparison.md)
       * [Functions](word-salad/cheatsheets/bash/functions.md)
+      * [Special Variables](word-salad/cheatsheets/bash/special-variables.md)
     * [system architecture](word-salad/cheatsheets/system-architecture/README.md)
       * [BIOS / UEFI Hardware Settings](word-salad/cheatsheets/system-architecture/bios-uefi-hardware-settings.md)
       * [Booting the system](word-salad/cheatsheets/system-architecture/booting-the-system.md)
