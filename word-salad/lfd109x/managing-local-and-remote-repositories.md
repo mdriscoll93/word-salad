@@ -169,7 +169,7 @@ $ git clone https://192.168.1.100/~username/git-test
 
 You must substitute the right IP address or domain with the correct username.
 
-Suppose you want to make your project available to someone who does not use Git or store archived material of your current working tree without including the**.** `git` Repository information directories.
+Suppose you want to make your project available to someone who does not use Git or store archived material of your current working tree without including th&#x65;**.** `git` Repository information directories.
 
 This is easy to do with `git archive` the following:
 

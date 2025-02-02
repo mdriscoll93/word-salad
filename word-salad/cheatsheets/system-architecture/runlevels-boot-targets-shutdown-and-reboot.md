@@ -392,7 +392,7 @@ rc:2345:wait:/etc/rc.d/rc.M
 
 In this example, `init` will run the `/etc/rc.d/M` script (or command) whenever runlevel 2,3,4, or 5 are entered. `init` will wait until this command completes before doing anything else.
 
-These scripts used by `init` when starting the system, changing runlevels, or shutting down are typically stored in the /etc/init.d or /etc/rc.d directory. A series of symbolic links in the rc_n_.d directories, one directory for each runlevel _n_, usually control whether a script is started when entering a runlevel or stopped when leaving it. These links start with either a K or an S, followed by a two-digit number and then the name of the service. Some examples from an older system are shown in Listing 11.
+These scripts used by `init` when starting the system, changing runlevels, or shutting down are typically stored in the /etc/init.d or /etc/rc.d directory. A series of symbolic links in the r&#x63;_&#x6E;_.d directories, one directory for each runlevel _n_, usually control whether a script is started when entering a runlevel or stopped when leaving it. These links start with either a K or an S, followed by a two-digit number and then the name of the service. Some examples from an older system are shown in Listing 11.
 
 **Listing 11. Init scripts**
 
@@ -422,7 +422,7 @@ lrwxrwxrwx 1 root root 22 2008‑04‑01 07:54 S96avahi‑daemon ‑> ../init.d/
 lrwxrwxrwx 1 root root 17 2008‑11‑17 13:40 S99anacron ‑> ../init.d/anacron
 ```
 
-Here you see that the `audit` and `autofs` services have K_nn_ entries in all runlevels and S_nn_ entries for both in runlevels 3 and 5. The S indicates that the service is started when that runlevel is entered, while the K entry indicates that it should be stopped. The _nn_ component of the link name indicates the priority order in which the service should be started or stopped. In this example, `audit` is started before `autofs`, and it is stopped later. Since the K and S links usually link to the same script, the script knows whether it is entering or leaving a level by examining the link name by which it was called.
+Here you see that the `audit` and `autofs` services have &#x4B;_&#x6E;n_ entries in all runlevels and &#x53;_&#x6E;n_ entries for both in runlevels 3 and 5. The S indicates that the service is started when that runlevel is entered, while the K entry indicates that it should be stopped. The _nn_ component of the link name indicates the priority order in which the service should be started or stopped. In this example, `audit` is started before `autofs`, and it is stopped later. Since the K and S links usually link to the same script, the script knows whether it is entering or leaving a level by examining the link name by which it was called.
 
 However, Slackware uses a slightly different approach, as shown in Listing 12. Notice that the /etc/rc\[0-9].d directories are all empty. Entering a particular runlevel is controlled by a script such as the script to go multiuser, /etc/rc.d/rc.M which is used when entering run levels 2, 3, 4, or 5.
 
