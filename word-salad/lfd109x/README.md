@@ -6,7 +6,7 @@ coverY: -125.49333333333334
 layout:
   cover:
     visible: true
-    size: hero
+    size: full
   title:
     visible: true
   description:
@@ -63,5 +63,9 @@ layout:
 
 {% content-ref url="advanced-git-interfaces-gerrit.md" %}
 [advanced-git-interfaces-gerrit.md](advanced-git-interfaces-gerrit.md)
+{% endcontent-ref %}
+
+{% content-ref url="diffs.md" %}
+[diffs.md](diffs.md)
 {% endcontent-ref %}
 

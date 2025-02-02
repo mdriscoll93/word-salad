@@ -39,6 +39,7 @@
     * [Managing Local and Remote Repositories](word-salad/lfd109x/managing-local-and-remote-repositories.md)
     * [Patches](word-salad/lfd109x/patches.md)
     * [Advanced Git Interfaces: Gerrit](word-salad/lfd109x/advanced-git-interfaces-gerrit.md)
+    * [Merges](word-salad/lfd109x/merges-1.md)
   * [LFS182x](word-salad/lfs182x/README.md)
     * [Introduction](word-salad/lfs182x/introduction.md)
     * [Chapter 2. Cosign: Container Signing, Verification, and Storage in an OCI Registry](word-salad/lfs182x/chapter-2.-cosign-container-signing-verification-and-storage-in-an-oci-registry.md)
