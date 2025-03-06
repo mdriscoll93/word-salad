@@ -257,3 +257,8 @@ You’ll get output that indicates the beginning and end of your public key, wit
 &#xNAN;**-----END PUBLIC KEY-----**
 
 With your keys set up, you are ready to move on to creating and signing a container.
+
+#### Creating a Container
+
+With you keys set up, you'll now be creating a new container. Create a new directory within your user directory that is the same as your docker username and, within that, a directory called \`hello-container\`. If you will be opting to use a registry other than docker, feel free to use the relevant username for that registry.
+
