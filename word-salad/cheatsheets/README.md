@@ -1,6 +1,6 @@
 ---
-icon: book-open-cover
 description: for general purpose cheating
+icon: book-open-cover
 cover: ../../.gitbook/assets/cleanroom-cleanmind.png
 coverY: 0
 layout:
@@ -29,8 +29,8 @@ I prefer cheatsheets in LaTeX and then imported as PDFs. LaTeX is a nice languag
 
 
 
-{% content-ref url="network-tips/" %}
-[network-tips](network-tips/)
+{% content-ref url="../../cheatsheets/network-tips/" %}
+[network-tips](../../cheatsheets/network-tips/)
 {% endcontent-ref %}
 
 {% content-ref url="bash/" %}
