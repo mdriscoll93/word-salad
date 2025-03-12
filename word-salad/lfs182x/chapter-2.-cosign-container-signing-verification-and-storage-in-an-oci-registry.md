@@ -55,14 +55,13 @@ index.docker.io/sigstore-course/demo:sha256-87ef60f558bad79beea6425a3b28989f01dd
 
 Finally, you can verify a software artifact against a public key with the **cosign verify** command. This command will return **0** if at least one Cosign formatted signature for the given artifact is found that matches the public key. Any valid formats are printed to standard output in a JSON format.
 
-```bash
-$ cosign verify --key cosign.pub sigstore-course/demo
-
+<pre class="language-bash"><code class="lang-bash"><strong>$ cosign verify --key cosign.pub sigstore-course/demo
+</strong>
 The following checks were performed on these signatures:
   - The cosign claims were validated
   - The signatures were verified against the specified public key
 {"Critical":{"Identity":{"docker-reference":""},"Image":{"Docker-manifest-digest":"sha256:87ef60f558bad79beea6425a3b28989f01dd417164150ab3baab98dcbf04def8"},"Type":"cosign container image signature"},"Optional":null}
-```
+</code></pre>
 
 You should now have some familiarity with the process of signing and verifying code in Cosign. In the lab portion of this chapter, we will go through installing Cosign and understanding its commands in greater detail with a full demonstration.
 
@@ -117,9 +116,12 @@ The following checks were performed on all of these signatures:
 {"Critical":{"Identity":{"docker-reference":""},"Image":{"Docker-manifest-digest":"sha256:97fc222cee7991b5b061d4d4afdb5f3428fcb0c9054e1690313786befa1e4e36"},"Type":"cosign container image signature"},"Optional":null}
 ```
 
-As part of the JSON output, you should get feedback on the issuer that you used and the email address associated with it. For example, if you used Google as the authenticator, you will have `"Issuer":"https://accounts.google.com","Subject":"your-email@gmail.com"}}]` as the last part of your output.
+As part of the JSON output, you should get feedback on the issuer that you used and the email address associated with it. For example, if you used Google as the authenticator, you will have&#x20;
 
-## Chapter 2 - Lab
+```json
+"Issuer":"https://accounts.google.com","Subject":"your-email@gmail.com"}}] as the last part of your output.
+
+```
 
 ### Cosign Installation
 
@@ -161,7 +163,9 @@ For Ubuntu and Debian distributions, check the releases page and download the la
 
 For CentOS and Fedora, download the latest **.rpm** package from the releases page and install Cosign with:
 
-`$ rpm -ivh cosign-1.8.0.x86_64.rpm`
+```bash
+$ rpm -ivh cosign-1.8.0.x86_64.rpm
+```
 
 You can check to ensure that Cosign is successfully installed using the **cosign version** command following installation. When you run the command, you should receive output that indicates the version you have installed.
 
@@ -169,17 +173,22 @@ You can check to ensure that Cosign is successfully installed using the **cosign
 
 You may choose to install Cosign with Go if you already are working in the programming language Go. Additionally, installing with Go will work across different distributions. First, check that you have Go installed on your machine, and ensure that it is Go version 1.16 or later.
 
-`$ go version`
+```bash
+~ $ go version
+```
 
 As long as your output indicates that you are at Go 1.16 or above, you’ll be ready to install Cosign with Go. Your output should appear similar to the following.
 
-`go version go1.17.6 darwin/arm64`
+```go
+~ $ go version go1.17.6 darwin/arm64
+```
 
 If you run into an error or don’t receive output like the above, you’ll need to install Go in order to install Cosign with Go. Navigate to the official [Go website](https://go.dev/doc/install) in order to download the appropriate version of Go for your machine.
 
 With Go 1.16 or above installed, you are ready to install Cosign with Go, using the following command.
 
-`$ go install github.com/sigstore/cosign/cmd/cosign@latest`
+<pre class="language-go"><code class="lang-go"><a data-footnote-ref href="#user-content-fn-1">$ go install ~ $ github.com/sigstore/cosign/cmd/cosign@latest</a>
+</code></pre>
 
 The resulting binary from this installation will be placed at `$GOPATH/bin/cosign.`&#x20;
 
@@ -262,3 +271,6 @@ With your keys set up, you are ready to move on to creating and signing a contai
 
 With you keys set up, you'll now be creating a new container. Create a new directory within your user directory that is the same as your docker username and, within that, a directory called \`hello-container\`. If you will be opting to use a registry other than docker, feel free to use the relevant username for that registry.
 
+
+
+[^1]: 

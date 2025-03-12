@@ -3,11 +3,49 @@ description: an overview of software supply chain security
 icon: '1'
 ---
 
-# Introduction
+# Chapter 1. Introduction: Software Supply Chain Security
 
-**Compromises** in the software supply chain have been on the rise over the past decade. Attackers have, for instance, distributed compilers with backdoors added (example: XcodeGhost Compromise), broken into software build systems to inject malicious code  (example: SolarWinds Attack), and hijacked automatic update systems to distribute malware. The count of publicly reported software supply chain compromises, depending on the methodology, numbers in the hundreds or thousands. See the figure below for a graph describing the growth of software supply chain attacks.
+Understanding Sigstore starts with putting it into the context of the broader operating landscape of Software Supply Chain Security. The Software Supply Chain encompasses the entire journey of creating and delivering software to end-users. Mirroring a physical supply chain that moves products from manufacturing to consumers, the Software Supply Chain involves various stages such as coding, code review, version control, packaging, distribution, etc.
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption><p><strong>Count of Software Supply Chain Attacks by Year Reported</strong> <br>Data Source: Dan Geer, Bentz Tozer, and John Speed Meyers,<br>“Counting Broken Links: A Quant’s View of Software Supply Chain Security,” USENIX ;login:, December 2020.</p></figcaption></figure>
+The integrity of the whole chain is of utmost importance in our digital age, as any vulnerability or breach can lead to severe consequences like data theft, privacy breaches, or malware proliferation. How can we protect the Software Supply Chain and ensure that what was built and delivered is safe, free from malicious intent, and has not been tampered with? That is the goal of Supply Chain Security.
+
+Protecting the whole chain and maintaining innovation is not feasible. So it is done in stages and at various points. Think of the world of the Software Supply Chain in two dimensions: the chain of events around the code: software development, code reviews, version control, packaging, distribution, and ending with the end-user. Overlay a separate verification process, with “checkpoints” designed to verify and validate that what was originally built is what is actually delivered, all while tracking every request.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>General Approach to Software Supply Chain Security</p></figcaption></figure>
+
+### Elements of Software Supply Chain Security
+
+The security of the Software Supply Chain depends on validating several ways:
+
+{% tabs %}
+{% tab title="Code Reviews" %}
+Code reviews are a systematic examination of computer source code intended to find and fix mistakes overlooked in the initial development phase, improving both the overall quality of software and the developers' skills. Code reviews are vital because they provide an opportunity to catch security flaws before the software is deployed. By scrutinizing code through peer review, organizations can identify vulnerabilities, such as security loopholes or bugs that could be exploited by malicious actors, thereby enhancing the security posture of the Software Supply Chain.
+{% endtab %}
+
+{% tab title="Code Signing" %}
+Code signing is the method of signing executable scripts and code, enabling the authentication of the code's source and the validation of its integrity. This vigilance is increasingly significant in a digital landscape where the risk of malicious actors injecting harmful code into software is ever-present.
+{% endtab %}
+
+{% tab title="Software Signing" %}
+Software signing serves as a digital seal of authenticity. It involves the process of attaching a digital signature to software, a step that verifies the software has not been tampered with since the developer's last sign-off. This practice is a linchpin in the relationship of trust between software producers and users, assuring that the software delivered is genuine and secure.
+{% endtab %}
+
+{% tab title="Software Integrity" %}
+Software integrity is an essential component of software signing. It is essentially the guarantee that software remains unchanged, and uncompromised, from its original design, preserving the intended functionality and security measures established by the developers. In today's digital world, where vulnerabilities in software can have far-reaching and serious implications, the importance of maintaining software integrity cannot be overstated.
+{% endtab %}
+
+{% tab title="Signature Management" %}
+Signature management involves the processes and technologies used to create, distribute, store, and revoke digital signatures, and manage the cryptographic keys associated with them. By properly managing signatures and keys, organizations can prevent unauthorized access and modifications, reduce the risk of key compromise, and ensure that software remains secure and trustworthy. This is particularly important in mitigating risks associated with key theft or misuse, which could otherwise lead to the distribution of compromised software.
+{% endtab %}
+
+{% tab title="Verification" %}
+Verification refers to the process of ensuring that software artifacts and their signatures are authentic and have not been altered since they were signed. This includes verifying the identity of the entity that signed the software and confirming that the software has not been tampered with. By verifying the signatures of software artifacts, organizations can ensure that the software has not been modified by unauthorized parties, thereby protecting against Software Supply Chain attacks that seek to inject malicious code into legitimate software packages.
+{% endtab %}
+{% endtabs %}
+
+Compromises in the software supply chain have been on the rise over the past decade. Attackers have, for instance, distributed compilers with backdoors added (example: XcodeGhost Compromise), broken into software build systems to inject malicious code  (example: SolarWinds Attack), and hijacked automatic update systems to distribute malware. The count of publicly reported software supply chain compromises, depending on the methodology, numbers in the hundreds or thousands. See the figure below for a graph describing the growth of software supply chain attacks.
+
+<figure><img src="../../.gitbook/assets/image (14) (1).png" alt=""><figcaption><p><strong>Count of Software Supply Chain Attacks by Year Reported</strong> <br>Data Source: Dan Geer, Bentz Tozer, and John Speed Meyers,<br>“Counting Broken Links: A Quant’s View of Software Supply Chain Security,” USENIX ;login:, December 2020.</p></figcaption></figure>
 
 Countering these compromises through prevention, mitigation, and remediation has therefore taken on increasing urgency. Founded in 2020, the [Open Source Security Foundation](https://openssf.org/) (OpenSSF) has begun to devise improved defenses against software supply chain attacks. As a cross-industry collaboration, the OpenSSF partners with private companies, government agencies, and individuals to support their mission of proactively handling security. The [**Sigstore project**](https://www.sigstore.dev/) is one of these improved defenses, providing a method for guaranteeing the end-to-end integrity of software artifacts.
 
@@ -15,10 +53,12 @@ This chapter defines software supply chain security and provides examples of att
 
 ## Learning Objectives
 
-* Define software supply chain security.
-* Have an understanding of key software supply chain security concepts and terms.
-* Discuss the motivation and history of the Sigstore project.
-* Explain the overall architecture of the Sigstore project.
+* Define Software Supply Chain Security
+* Identify the difference between Software Signing and Code Signing as it pertains to Sigstore
+* Define key concepts and terms in Software Supply Chain Security
+* Describe the history of the Sigstore project
+* Explain the value of Software Supply Chain Security
+* Explore the benefits of using a policy engine
 
 ### What is Software Supply Chain Security?
 
