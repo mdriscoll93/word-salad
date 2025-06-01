@@ -177,6 +177,8 @@ echo '2' | jq 'if . == 0 then "zero" elif . == 1 then "one" else "many" end'
 ```
 {% endcode %}
 
+mermaid.js diagram
+
 ```mermaid
 flowchart TD
     classDef startStop fill:#f9f,stroke:#333,stroke-width:2px;
@@ -199,3 +201,6 @@ flowchart TD
 
 
 ```
+
+or using plantuml:\
+![](https://img.plantuml.biz/plantuml/svg/HOvB3i8m34JtFeNPfOis-xBW9ox03K9mIQJMgH8RrDkJLWYMRpoUcMCHbqMd4NQH_QWFmY0obzxQxDxTCqhGknRAFh4GI-VJP0SLpTIwx4CKycBd6j1Ae8cAdLmHolPB_qihQUbM1DWw0VhhoutgXF24vfBu4IKcRlO0SK1pmbXGiafO3WtM24QpK6a0iRyfundD9jwpOn_g5us5q73wEIveDktlg1N3MfzcE5POntm0)
