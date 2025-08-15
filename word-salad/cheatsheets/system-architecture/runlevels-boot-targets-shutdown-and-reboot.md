@@ -1,20 +1,9 @@
 ---
-icon: crosshairs-simple
 description: >-
   learn to shut down or reboot your Linux system, warn users that the system is
   going down, and switch to single-user mode or a more or less restrictive
   runlevel or boot target.
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: false
-  pagination:
-    visible: false
+icon: crosshairs-simple
 ---
 
 # Runlevels, boot targets, shutdown, and reboot

@@ -1,18 +1,4 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
-# LFS146 - Introduction to Cilium
+# 🐝 LFS146 - Introduction to Cilium
 
 {% stepper %}
 {% step %}

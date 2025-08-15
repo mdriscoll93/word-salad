@@ -2,20 +2,6 @@
 description: learn to solve problems with the iproute2 toolset
 cover: ../../../../.gitbook/assets/lofi-dc.jpeg
 coverY: -52
-layout:
-  cover:
-    visible: true
-    size: hero
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Intro to iproute2
@@ -92,7 +78,7 @@ Invoke `ip OBJECT` where `OBJECT` is some entity, and you'll get summary info fo
 ```
 
 {% hint style="info" %}
-This info comes straight from the [Neighbor Discovery Cache](https://en.wikipedia.org/wiki/Neighbor\_Discovery\_Protocol) (NDC). \
+This info comes straight from the [Neighbor Discovery Cache](https://en.wikipedia.org/wiki/Neighbor_Discovery_Protocol) (NDC). \
 \- `REACHABLE` indicates that a positive confirmation of reachability for the associated ND cache entry was received within a certain time interval (defined as the `ReachableTime`). This positive confirmation could be the receipt of a Neighbor Advertisement following a Neighbor Solicitation or an upper-layer protocol successfully using the NDC entry.\
 \- `STALE` means the `ReachableTime` has elapsed before a subsequent confirmation of reachability has been received.
 {% endhint %}

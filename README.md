@@ -1,22 +1,8 @@
 ---
-icon: salad
 description: please enjoy responsibly
+icon: salad
 cover: .gitbook/assets/ubuntu_yak.jpg
 coverY: -102.32533333333333
-layout:
-  cover:
-    visible: true
-    size: hero
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: false
 ---
 
 # Word Salad

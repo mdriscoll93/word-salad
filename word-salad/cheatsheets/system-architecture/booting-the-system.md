@@ -1,19 +1,8 @@
 ---
-icon: boot
 description: >-
   This tutorial helps you understand the boot sequence from BIOS to boot
   completion
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: false
+icon: boot
 ---
 
 # Booting the system

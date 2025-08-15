@@ -3,17 +3,6 @@ description: >-
   The default NAT-based network has some limitations. Follow the steps below to
   overcome these limitations and take control of your server environment. There
   are four main components: a dummy network in
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: false
 ---
 
 # Custom NAT-based libvirt networks

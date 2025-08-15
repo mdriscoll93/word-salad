@@ -1,17 +1,6 @@
 ---
 description: Introducing GRUB, GRUB2, and LILO
 icon: boot-heeled
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Install a Boot Manager

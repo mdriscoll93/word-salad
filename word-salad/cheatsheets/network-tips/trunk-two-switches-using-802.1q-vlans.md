@@ -1,16 +1,5 @@
 ---
 description: screenshots specific to Mikrotik
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: false
 ---
 
 # Trunk two switches using 802.1q VLANS

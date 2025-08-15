@@ -3,17 +3,6 @@ description: >-
   learn how to compare arrays in Shell scripting. Arrays are useful data
   structures for storing multiple values, and comparing them is a common task in
   programming. You will work with three arrays and d
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: false
 ---
 
 # Array comparison

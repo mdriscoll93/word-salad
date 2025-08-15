@@ -1,17 +1,6 @@
 ---
 description: Chapter 6.
 icon: diagram-venn
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Managing Files and the Index
