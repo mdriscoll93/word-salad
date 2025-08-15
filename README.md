@@ -33,6 +33,18 @@ In other words, these are my personal notes - [the ones I am not too embarrassed
 [lfd109x](word-salad/lfd109x/)
 {% endcontent-ref %}
 
+{% content-ref url="word-salad/lfs182x/" %}
+[lfs182x](word-salad/lfs182x/)
+{% endcontent-ref %}
+
+{% content-ref url="word-salad/lfs146x/" %}
+[lfs146x](word-salad/lfs146x/)
+{% endcontent-ref %}
+
+{% content-ref url="word-salad/lfs241x/" %}
+[lfs241x](word-salad/lfs241x/)
+{% endcontent-ref %}
+
 <figure><img src=".gitbook/assets/tall_corn_1.jpg" alt=""><figcaption><p>"Knowledge Gardens" are too complicated for my smooth brain; thus, I've opted for a literal garden to complement this knowledge base.</p></figcaption></figure>
 
 
