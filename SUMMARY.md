@@ -51,3 +51,4 @@
     * [Chapter 3 - Install Cilium](word-salad/lfs146x/chapter-3-install-cilium.md)
   * [🔥 LFS241x](word-salad/lfs241x/README.md)
     * [Course Introduction](word-salad/lfs241x/course-introduction.md)
+    * [Observability](word-salad/lfs241x/observability.md)

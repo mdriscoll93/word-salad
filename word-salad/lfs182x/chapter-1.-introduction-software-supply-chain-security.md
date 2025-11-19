@@ -11,7 +11,7 @@ The integrity of the whole chain is of utmost importance in our digital age, as 
 
 Protecting the whole chain and maintaining innovation is not feasible. So it is done in stages and at various points. Think of the world of the Software Supply Chain in two dimensions: the chain of events around the code: software development, code reviews, version control, packaging, distribution, and ending with the end-user. Overlay a separate verification process, with “checkpoints” designed to verify and validate that what was originally built is what is actually delivered, all while tracking every request.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>General Approach to Software Supply Chain Security</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>General Approach to Software Supply Chain Security</p></figcaption></figure>
 
 ### Elements of Software Supply Chain Security
 
