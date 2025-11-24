@@ -6,8 +6,7 @@ description: screenshots specific to Mikrotik
 
 Scenario: You have one MikroTik RB250GS switch running 802.1Q vlans and you want to extend all or some of those vlans to a second switch. The following diagram borrowed from a post by Ozelo explains:
 
-\
-
+<br>
 
 <figure><img src="../../../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -17,8 +16,7 @@ Configure the first switch as follows:
 
 <figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-\
-
+<br>
 
 <figure><img src="../../../.gitbook/assets/image (2) (2) (1).png" alt=""><figcaption></figcaption></figure>
 

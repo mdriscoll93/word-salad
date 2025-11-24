@@ -84,8 +84,7 @@ PENGWIN_VERSION="23.03.1"
 
 </code></pre>
 
-Because `ldd` is concerned with dynamic linking, it tells us that both `sln` and `ldconfig` are statically linked by outputting `not a dynamic executable`, while it tells us the names of three shared libraries (`linux-vdso.so.1`, `libc.so.6`, and `/lib64/ld-linux-x86-64.so.2`) that the `ln` command needs. Note that `.so` indicates that these are shared objects or dynamic libraries,\
-
+Because `ldd` is concerned with dynamic linking, it tells us that both `sln` and `ldconfig` are statically linked by outputting `not a dynamic executable`, while it tells us the names of three shared libraries (`linux-vdso.so.1`, `libc.so.6`, and `/lib64/ld-linux-x86-64.so.2`) that the `ln` command needs. Note that `.so` indicates that these are shared objects or dynamic libraries,<br>
 
 This output also illustrates three different types of information you are likely to see:
 

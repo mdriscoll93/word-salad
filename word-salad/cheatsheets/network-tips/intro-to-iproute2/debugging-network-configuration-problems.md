@@ -107,8 +107,7 @@ We can use the `-I` flag (for interface) with ping to force use of a certain int
 
 In this case, it means that the interface in question is not set up to handle IPv6 traffic and that's what ping was trying to use.
 
-If you run into this add -4 or -6 to check whether you may hav eone or the other kind of connectivity only\
-
+If you run into this add -4 or -6 to check whether you may hav eone or the other kind of connectivity only<br>
 
 ```
 [ian@ianattic5-f31 ~]$ ping -I -q -c2 wlp8s0u2 192.168.1.1
@@ -304,8 +303,7 @@ tcp               ESTAB                  0                   0
 
 The ss command also has the ability to construct quite elaborate state filters as part of the command.
 
-The example below shows how to filter established TCP sockets using the SSH port, either as a source port or a destination port. It shows an example of four SSH sessions, two originating at my Ubuntu host (192.168.1.24) to my Fedora host (192.168.1.25 and 192.168.3.30) and two in the reverse direction, one V4 and one v6.\
-
+The example below shows how to filter established TCP sockets using the SSH port, either as a source port or a destination port. It shows an example of four SSH sessions, two originating at my Ubuntu host (192.168.1.24) to my Fedora host (192.168.1.25 and 192.168.3.30) and two in the reverse direction, one V4 and one v6.<br>
 
 ```
 [ian@ianattic5-f31 ~]$ ss -t state established '( dport = :ssh or sport = :ssh )'

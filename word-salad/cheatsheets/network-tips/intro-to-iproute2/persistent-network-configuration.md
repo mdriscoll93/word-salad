@@ -50,8 +50,7 @@ The kernel stores the currently active host name in the virtual `/proc` file sys
 
 #### changing the hostname
 
-using the `hostname` command as root does not update the value in `/etc/hostname`\
-
+using the `hostname` command as root does not update the value in `/etc/hostname`<br>
 
 ```bash
 [ian@attic5-f29 ~]$ cat /etc/hostname
@@ -262,8 +261,7 @@ Below shows /etc/nsswitch.conf from my Ubuntu 18.04 LTS system. In this example,
 3. then use DNS,&#x20;
 4. and finally see if the current host name matches the search.&#x20;
 
-Now you see why Fedora might choose not to create an entry for the host name in /etc/hosts. Try `dig $(hostname)` to look up your host name on such a system.\
-
+Now you see why Fedora might choose not to create an entry for the host name in /etc/hosts. Try `dig $(hostname)` to look up your host name on such a system.<br>
 
 #### /etc/nsswitch.conf Ubuntu 18.04 LTS
 

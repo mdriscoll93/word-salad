@@ -123,8 +123,7 @@ To influence your system's boot process, you can:
 
 * Change the device from which you boot. If you normally boot from a hard drive, you might need to boot from a floppy disk, a USB memory key, a CD or DVD, or a network. Setting up such alternate boot devices requires your BIOS or UEFI to be appropriately configured and can require a particular keystroke during boot to display choices.&#x20;
 * Figure 1 illustrates the choices on one of my BIOS systems.&#x20;
-* Figure 2 illustrates how this looks on one of my UEFI systems. The method for setting up boot devices and selecting a boot device at startup is specific to your system and its BIOS. It is also beyond the scope of this LPI objective's requirements, so consult your system documentation.\
-
+* Figure 2 illustrates how this looks on one of my UEFI systems. The method for setting up boot devices and selecting a boot device at startup is specific to your system and its BIOS. It is also beyond the scope of this LPI objective's requirements, so consult your system documentation.<br>
 
 <figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -137,7 +136,7 @@ To influence your system's boot process, you can:
 
 When GRUB2 loads, it presents information from a configuration file, normally located in /boot/grub/grub.cfg or /boot/grub2/grub.cfg. Listing 1 shows a small part of a grub.cfg file for a Fedora 22 system. I broke some lines for publication and indicate these with a trailing backslash (\\).
 
-### Listing 1. GRUB2 configuration menu entry to boot Fedora 22 
+### Listing 1. GRUB2 configuration menu entry to boot Fedora 22<br>
 
 ```bash
 ###BEGIN /etc/grub.d/10_linux ###
@@ -238,8 +237,7 @@ Where 'name' is a unique keyword that identifies what part of the kernel should 
 
 You can find out more about boot parameters from the man pages using info bootparam`infobootparam` or man bootparam`manbootparam`. Up-to-date information is also supplied in the kernel-parameters.txt file, which should be available in the kernel-doc package. **Note:** At the time of writing, Fedora 22 does not appear to have a kernel-doc package or kernel-parameters file.
 
-Suppose you want to modify kernel parameters or add new ones or otherwise change the values from the menu entry in the grub.cnf file. When you see the GRUB2 menu, you can edit the entry that you want to modify by selecting it and then pressing e. You then see a screen like Figure 5, where you recognize information from the first few lines of Listing 1.\
-
+Suppose you want to modify kernel parameters or add new ones or otherwise change the values from the menu entry in the grub.cnf file. When you see the GRUB2 menu, you can edit the entry that you want to modify by selecting it and then pressing e. You then see a screen like Figure 5, where you recognize information from the first few lines of Listing 1.<br>
 
 #### Figure 5. Editing the Fedora 22 GRUB2 menu entry
 

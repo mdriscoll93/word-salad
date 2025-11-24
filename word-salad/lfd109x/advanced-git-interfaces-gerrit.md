@@ -25,8 +25,7 @@ This method works well if you have a basic pyramid view of things. Each subsyste
 
 But what if you want to have a more dispersed review? That’s where **Gerrit** comes in.
 
-The picture below illustrates a simplified Git workflow.\
-
+The picture below illustrates a simplified Git workflow.<br>
 
 <figure><img src="../../.gitbook/assets/image (14).png" alt="" width="563"><figcaption><p>typical git workflow</p></figcaption></figure>
 
@@ -69,4 +68,4 @@ The project, however, has a great [walkthrough example](https://gerrit-review.go
 
 Please read this example thoroughly.
 
-\
+<br>

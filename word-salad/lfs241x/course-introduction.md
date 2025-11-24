@@ -1,3 +1,21 @@
+---
+icon: align-justify
+layout:
+  width: wide
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+---
+
 # Course Introduction
 
 ## Course Overview, Objectives, Timing, and Assessments
@@ -132,8 +150,7 @@ In order to make it easier to distinguish the various types of content in the co
 
 One great way to interact with peers taking this course is via the [Class Forum](https://forum.linuxfoundation.org/categories/lfs241-class-forum).
 
-The forum can be used to:\
-
+The forum can be used to:<br>
 
 * Introduce yourself to other peers taking this course.
 * Discuss concepts, tools and technologies presented in this course, or related to the topics discussed in the course materials.
@@ -142,8 +159,7 @@ The forum can be used to:\
 * Review issues that were already raised, including possible solutions - the forum can be a great learning resource as well, and you may find that your questions have already been answered in previous posts.
 * Share resources and ideas related to the topics covered in the course.
 
-**Please note that all announcements regarding course updates are posted in the forum, so we highly recommend that you periodically check it out.**\
-
+**Please note that all announcements regarding course updates are posted in the forum, so we highly recommend that you periodically check it out.**<br>
 
 </details>
 
@@ -178,8 +194,7 @@ Linux is a registered trademark of Linus Torvalds. Other trademarks within this 
 
 If you believe The Linux Foundation materials are being used, copied, or otherwise improperly distributed, please email [info@linuxfoundation.org](mailto:) or call +1-415-723-9709 (USA).
 
-\
-
+<br>
 
 </details>
 

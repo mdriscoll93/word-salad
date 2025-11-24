@@ -123,8 +123,7 @@ my_array=(apple banana "Fruit Basket" orange)
 echo ${#my_array[@]}                # 4
 ```
 
-The array elements can be accessed by their numeric index. The index of the first element is 0.\
-
+The array elements can be accessed by their numeric index. The index of the first element is 0.<br>
 
 ```bash
 my_array=(apple banana "Fruit Basket" orange)

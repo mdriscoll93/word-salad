@@ -94,8 +94,7 @@ The index contains a complete picture of the state of a project at a given time.
 
 Changes such as adding, deleting, renaming or moving files are reflected in modifications to the index. These changes are maintained until you actually commit them in the repository.
 
-The index plays a vital part in merging repository branches.\
-
+The index plays a vital part in merging repository branches.<br>
 
 ## Content vs Pathnames
 

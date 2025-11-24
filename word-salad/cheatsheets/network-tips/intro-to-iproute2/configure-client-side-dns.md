@@ -30,8 +30,7 @@ per [#tcp-ip-host-configuration](persistent-network-configuration.md#tcp-ip-host
 
 ## Query a remote DNS Server
 
-Using `host` to query info from a DNS server - command 1 shows some basic examples. Note that cybershields.com has an IPv4 and a mail server record, while Google has both IPv4 and IPv6 and multiple mail records:\
-
+Using `host` to query info from a DNS server - command 1 shows some basic examples. Note that cybershields.com has an IPv4 and a mail server record, while Google has both IPv4 and IPv6 and multiple mail records:<br>
 
 ### `host` command basic usage
 
@@ -64,8 +63,7 @@ google.com mail is handled by 10 smtp.google.com.
 
 ```
 
-Another thing you'll come across often is shown in the following command, where an alias allows multiple domain names to be mapped to a single address record that can ease the task of maintaining the name server records. By default, the `host` command will recursively follow aliases to the final resolution or resolutions. In the example shown here, www.cybershields.com is an alias for cybershields.com. On the other hand, www.lpi.org does not use an alias. Finally, the ibm.com domain shows a chain of several aliases that eventually resolve to one IPv4 address and two IPv6 addresses. You can try this with other common subdomains such as mail or ftp. For example, try:\
-
+Another thing you'll come across often is shown in the following command, where an alias allows multiple domain names to be mapped to a single address record that can ease the task of maintaining the name server records. By default, the `host` command will recursively follow aliases to the final resolution or resolutions. In the example shown here, www.cybershields.com is an alias for cybershields.com. On the other hand, www.lpi.org does not use an alias. Finally, the ibm.com domain shows a chain of several aliases that eventually resolve to one IPv4 address and two IPv6 addresses. You can try this with other common subdomains such as mail or ftp. For example, try:<br>
 
 <pre class="language-bash"><code class="lang-bash"><strong>~ $ host mail.google.com
 </strong>mail.google.com has address 142.250.138.19
@@ -109,8 +107,7 @@ e2874.dscx.akamaiedge.net has IPv6 address 2600:1408:5c00:3a2::b3a
 e2874.dscx.akamaiedge.net has IPv6 address 2600:1408:5c00:384::b3a
 ```
 
-The `host` command has several options, including options to search for specific types of records. Table 1 shows some common types of records that you may see.\
-
+The `host` command has several options, including options to search for specific types of records. Table 1 shows some common types of records that you may see.<br>
 
 ### Common DNS record types:
 
@@ -492,8 +489,7 @@ ian@attic4-sl42:~$ getent -s dns hosts cybershields.com
 
 ## Using systemd-resolvd
 
-If your system uses the systemd initialization process rather than init, there are some differences in DNS resolution to consider. The **`systemd-resolvd`** service provides network name resolution and implements a stub DNS resolver. The main configuration file is `/etc/systemd/resolved.conf`. See the man or info pages or additional sources used by systemd-resolved. Here are some commands that can help you determine whether you are using systemd or init and whether you are running systemd-resolved:\
-
+If your system uses the systemd initialization process rather than init, there are some differences in DNS resolution to consider. The **`systemd-resolvd`** service provides network name resolution and implements a stub DNS resolver. The main configuration file is `/etc/systemd/resolved.conf`. See the man or info pages or additional sources used by systemd-resolved. Here are some commands that can help you determine whether you are using systemd or init and whether you are running systemd-resolved:<br>
 
 ### Am I using init or systemd?
 
@@ -538,8 +534,7 @@ Needless to say, the changes I made to `/etc/resolv.conf` will be overwritten wh
 
 Note that there is likely to be a `/etc/dhclient.conf` example file, which contains examples of things you can set or change.\
 \
-Use the `resolvectl status` command to find the actual DNS server that your systemd-resolved DNS stub resolver is using upstream. \
-
+Use the `resolvectl status` command to find the actual DNS server that your systemd-resolved DNS stub resolver is using upstream. <br>
 
 **Partial output from resolvectl status**
 
@@ -560,8 +555,7 @@ MulticastDNS setting: no
                       lan
 ```
 
-As a final note on systemd-resolved, try examples as shown in Listing 16 and see what happens. Did you expect this? Think about which host the stub resolver is running on and how it gets its configuration information.\
-
+As a final note on systemd-resolved, try examples as shown in Listing 16 and see what happens. Did you expect this? Think about which host the stub resolver is running on and how it gets its configuration information.<br>
 
 ## Debugging name resolution errors
 

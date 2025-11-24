@@ -26,8 +26,7 @@ Most of the time a Linux system runs as a multiuser system, often as a server wi
 
 When you need to do some kinds of system maintenance you don't want all those users trying to get things done, so you need to be able to run the system with a single user rather than many. You also need to switch to this mode cleanly, giving appropriate warnings to logged-in users. And you need to get back into regular operation as quickly as possible. This tutorial shows you how.
 
-To get the most from the tutorials in this series, you should have a basic knowledge of Linux and a working Linux system on which to practice the commands covered in this tutorial. Sometimes different versions of a program will format output differently, so your results may not always look exactly like the listings and figures shown here. In particular, the newer upstart and systemd systems are changing many things that might be familiar to users of the traditional System V init process (see for details). This tutorial commences with discussion of the traditional System V init process and its runlevels. We then discuss upstart and systemd which are newer initialization processes.\
-
+To get the most from the tutorials in this series, you should have a basic knowledge of Linux and a working Linux system on which to practice the commands covered in this tutorial. Sometimes different versions of a program will format output differently, so your results may not always look exactly like the listings and figures shown here. In particular, the newer upstart and systemd systems are changing many things that might be familiar to users of the traditional System V init process (see for details). This tutorial commences with discussion of the traditional System V init process and its runlevels. We then discuss upstart and systemd which are newer initialization processes.<br>
 
 ## System V Runlevels
 
@@ -259,8 +258,7 @@ You should know about a few more commands related to shutdown and reboot.
 
 If any of these are called when the system is not in `runlevel 0` or `6`, then the corresponding `shutdown` command will be invoked instead.
 
-For additional options that you may use with these commands, as well as more detailed information on their operation, consult the man page.\
-
+For additional options that you may use with these commands, as well as more detailed information on their operation, consult the man page.<br>
 
 ## System V /etc/inittab
 
@@ -482,9 +480,8 @@ upstart‑0.6.5‑13.el6_5.3.x86_64
 
 With both upstart and systemd, vestiges of System V Init remain, particularly /etc/fstab and a skeletal /etc/inittab. The concept of runlevel is not directly supported. System V commands such as `telinit` are supported, but their function is mapped internally into activation and deactivation of upstart jobs or systemd units. Needless to say, the mapping may sometimes be less than perfect, so if you boot into runlevel 3 and then use telinit to switch to runlevel 5, your system may or may not work exactly as it would had you rebooted. The "SysVinit to Systemd Cheatsheet" (see [Resources)](https://developer.ibm.com/learningpaths/lpic1-exam-101-topic-101/l-lpic1-101-3/#artrelatedtopics) can help you map the concepts and commands from System V init to systemd.
 
-Upstart\
-
-
+Upstart<br>
+-----------
 
 A new initialization process called _upstart_ was first introduced in Ubuntu 6.10 ("Edgy Eft") in 2006. Fedora 9 through 14 and Red Hat Enterprise Linux (RHEL) 6 used upstart, as did distributions derived from these. Upstart supplanted the init process in Ubuntu among others, although vestiges of init remained. Upstart has not been updated since 2014, although it is still used in Google's proprietary Chrome OS.
 
@@ -494,8 +491,7 @@ The upstart initialization program replaces /sbin/init. Upstart jobs are defined
 
 Upstart also has the initctl command to allow interaction with the upstart init daemon. This allows you to start or stop jobs, list jobs, get status of jobs, emit events, restart the init process, and so on. Listing 14 shows how to use `initctl` to obtain a list of upstart jobs on a Fedora 13 system.
 
-**Listing 14. Interacting with upstart init daemon using initctl**\
-
+**Listing 14. Interacting with upstart init daemon using initctl**<br>
 
 ```bash
 ian@attic‑u14:~/data/lpic‑1$ #Ubuntu 14
@@ -539,9 +535,8 @@ unity‑panel‑service‑lockscreen stop/waiting
 indicator‑session start/running, process 1918
 ```
 
-Systemd\
-
-
+Systemd<br>
+-----------
 
 Another new initialization system called _systemd_ is also emerging. Systemd was developed by Lennart Poettering in early 2010. He described the rationale and design in a blog post (see references). Early adopters were Fedora 15, openSUSE 12.1 and Mandriva 2011 among others. With release 15.04 Ubuntu has switched from upstart to systemd.
 
@@ -766,4 +761,4 @@ Closing files...
 \
 \
 \
-\
+<br>
