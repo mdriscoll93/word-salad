@@ -1,11 +1,10 @@
 ---
 description: please enjoy responsibly
-icon: salad
 cover: .gitbook/assets/ubuntu_yak.jpg
 coverY: -102.32533333333333
 ---
 
-# Word Salad
+# 🥗 Word Salad
 
 > _"Freedom Two is the freedom to help your neighbor by distributing copies of the program. Now, for beings that can think and learn, sharing useful knowledge is a fundamental act of friendship. When these beings use computers, this act of friendship takes the form of sharing software. Friends share with each other. Friends help each other. This is the nature of friendship. And, in fact, this spirit of goodwill—the spirit of helping your neighbor, voluntarily—is society’s most important resource."_
 >
@@ -49,6 +48,6 @@ In other words, these are my personal notes - [the ones I am not too embarrassed
 
 
 
-
+<img alt="" class="gitbook-drawing">
 
 [^1]: This statement is subject to change.

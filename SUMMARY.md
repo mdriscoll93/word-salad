@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Word Salad](README.md)
+* [🥗 Word Salad](README.md)
   * [cheatsheets](word-salad/cheatsheets/README.md)
     * [network tips](cheatsheets/network-tips/README.md)
       * [Intro to iproute2](word-salad/cheatsheets/network-tips/intro-to-iproute2/README.md)
