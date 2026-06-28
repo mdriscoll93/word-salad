@@ -3,6 +3,24 @@ description: >-
   This tutorial helps you understand the boot sequence from BIOS to boot
   completion
 icon: boot
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # Booting the system

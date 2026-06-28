@@ -4,6 +4,24 @@ description: >-
   going down, and switch to single-user mode or a more or less restrictive
   runlevel or boot target.
 icon: crosshairs-simple
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: false
+  pagination:
+    visible: false
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # Runlevels, boot targets, shutdown, and reboot

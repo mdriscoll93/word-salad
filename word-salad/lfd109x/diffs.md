@@ -3,6 +3,24 @@ description: >-
   git lets you describe the differences between different branches and commits
   in a clear form.
 icon: code-compare
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # Diffs

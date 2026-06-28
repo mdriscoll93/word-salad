@@ -3,6 +3,24 @@ description: >-
   Shell functions are reusable blocks of code that perform specific tasks,
   making our scripts more organized and efficient. They can be viewed as
   mini-scripts within a larger script, allowing y
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # Functions

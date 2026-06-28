@@ -2,6 +2,27 @@
 description: learn to solve problems with the iproute2 toolset
 cover: ../../../../.gitbook/assets/lofi-dc.jpeg
 coverY: -52
+layout:
+  width: default
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # Intro to iproute2

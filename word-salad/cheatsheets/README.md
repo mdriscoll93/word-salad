@@ -3,6 +3,27 @@ description: for general purpose cheating
 icon: book-open-cover
 cover: ../../.gitbook/assets/cleanroom-cleanmind.png
 coverY: 0
+layout:
+  width: default
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # cheatsheets

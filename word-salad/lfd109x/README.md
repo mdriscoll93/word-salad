@@ -3,6 +3,27 @@ description: git for software development
 icon: code-pull-request
 cover: ../../.gitbook/assets/git_lol.png
 coverY: -125.49333333333334
+layout:
+  width: default
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # LFD109x

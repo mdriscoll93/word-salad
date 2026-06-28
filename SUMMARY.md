@@ -52,4 +52,4 @@
   * [🔥 LFS241x](word-salad/lfs241x/README.md)
     * [01. Course Introduction](word-salad/lfs241x/01.-course-introduction.md)
     * [02. Observability](word-salad/lfs241x/02.-observability.md)
-    * [Prometheus Introduction](word-salad/lfs241x/prometheus-introduction.md)
+    * [03. Prometheus Introduction](word-salad/lfs241x/03.-prometheus-introduction.md)

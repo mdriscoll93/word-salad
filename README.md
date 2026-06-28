@@ -2,6 +2,27 @@
 description: please enjoy responsibly
 cover: .gitbook/assets/ubuntu_yak.jpg
 coverY: -102.32533333333333
+layout:
+  width: default
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # 🥗 Word Salad

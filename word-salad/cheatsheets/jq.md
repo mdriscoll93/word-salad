@@ -4,6 +4,27 @@ icon: brackets-curly
 cover: >-
   https://zwischenzugs.com/wp-content/uploads/2023/06/object_railroad_diagram.png
 coverY: 0
+layout:
+  width: default
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # jq

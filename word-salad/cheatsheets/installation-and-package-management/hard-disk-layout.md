@@ -1,6 +1,24 @@
 ---
 description: learn to design a disk partitioning layout for a Linux system.
 icon: album
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # Hard Disk Layout
