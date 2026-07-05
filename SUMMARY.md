@@ -2,7 +2,7 @@
 
 * [🥗 Word Salad](README.md)
   * [cheatsheets](word-salad/cheatsheets/README.md)
-    * [network tips](cheatsheets/network-tips/README.md)
+    * [network tips](word-salad/cheatsheets/network-tips/README.md)
       * [Intro to iproute2](word-salad/cheatsheets/network-tips/intro-to-iproute2/README.md)
         * [Configuration with iproute2](word-salad/cheatsheets/network-tips/intro-to-iproute2/configuration-with-iproute2.md)
         * [Debugging network configuration problems](word-salad/cheatsheets/network-tips/intro-to-iproute2/debugging-network-configuration-problems.md)
@@ -52,4 +52,4 @@
   * [🔥 LFS241x](word-salad/lfs241x/README.md)
     * [01. Course Introduction](word-salad/lfs241x/01.-course-introduction.md)
     * [02. Observability](word-salad/lfs241x/02.-observability.md)
-    * [03. Prometheus Introduction](word-salad/lfs241x/prometheus-introduction.md)
+    * [03. Prometheus Introduction](word-salad/lfs241x/03.-prometheus-introduction.md)

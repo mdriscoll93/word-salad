@@ -3,7 +3,7 @@
 ## Securing Your Software Supply Chain with Sigstore
 
 \
-![](<../../.gitbook/assets/image (2) (1).png>)
+![](<../../.gitbook/assets/image (5).png>)
 
 [Sigstore](https://www.sigstore.dev/) emerged from this growing necessity for enhanced security and transparency in software development and distribution, where the need to ensure the authenticity and integrity of software is paramount. This is where cryptographic signing, and specifically Sigstore, comes into play.
 
@@ -35,7 +35,7 @@ Sigstore's role within this landscape is both crucial and unique. It focuses on 
 
 Sigstore accomplishes this through a suite of tools and services designed for signing, verifying, and protecting software artifacts. For example, when a developer releases a new version of the software, Sigstore enables the developer to 'sign' their software, and users to verify these signatures, thereby establishing a layer of trust and authenticity in the software<br>
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>how Sigstore works:</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>how Sigstore works:</p></figcaption></figure>
 
 Integrating Sigstore into the Software Supply Chain represents not just a technical enhancement, but a shift towards establishing trust and security in software distribution. As our reliance on digital solutions grows, and as threats to software security become more sophisticated, the importance of solutions like Sigstore continues to increase. Sigstore’s pivotal role in fostering a secure digital environment ensures that the software remains secure from its creation to its eventual deployment, creating a more trustworthy digital ecosystem for all involved.
 
@@ -45,4 +45,4 @@ Sigstore's approach to Code Signing includes the provision of a secure, public l
 
 By simplifying the traditionally complex aspects of digital signatures, such as key management and certificate expiration, Sigstore makes the Software Signing process a streamlined and secure framework for software signing. This layer of security is indispensable, given the escalating sophistication of software attacks and our increasing reliance on digital tools and services.<br>
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Sigstore Process Overview</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Sigstore Process Overview</p></figcaption></figure>

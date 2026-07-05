@@ -36,8 +36,8 @@ I prefer cheatsheets in LaTeX and then imported as PDFs. LaTeX is a nice languag
 
 
 
-{% content-ref url="../../cheatsheets/network-tips/" %}
-[network-tips](../../cheatsheets/network-tips/)
+{% content-ref url="network-tips/" %}
+[network-tips](network-tips/)
 {% endcontent-ref %}
 
 {% content-ref url="bash/" %}

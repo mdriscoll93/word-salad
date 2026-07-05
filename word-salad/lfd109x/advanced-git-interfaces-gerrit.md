@@ -27,7 +27,7 @@ But what if you want to have a more dispersed review? That’s where **Gerrit** 
 
 The picture below illustrates a simplified Git workflow.<br>
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt="" width="563"><figcaption><p>typical git workflow</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (34).png" alt="" width="563"><figcaption><p>typical git workflow</p></figcaption></figure>
 
 ### Gerrit
 
@@ -39,7 +39,7 @@ This works best when there is one change per commit rather than a block of them,
 
 Below, you can see the Git workflow with Gerrit.
 
-<figure><img src="../../.gitbook/assets/image (1) (3).png" alt="" width="563"><figcaption><p>git workflow with Gerrit</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (35).png" alt="" width="563"><figcaption><p>git workflow with Gerrit</p></figcaption></figure>
 
 ### Review Process
 

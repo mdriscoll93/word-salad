@@ -40,7 +40,7 @@ Using [eBPF](https://ebpf.io/) as an underlying engine, Cilium creates a network
 
 Because eBPF runs inside the Linux kernel, Cilium security policies can be applied and updated without changing the application code or container configuration. eBPF programs hook into the Linux network datapath and can be used to drop packets based on network policy rules as the packet enters the network socket.
 
-<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption><p><strong>eBPF Linux Kernel Hooks (by Isovalent, Inc.)</strong></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption><p><strong>eBPF Linux Kernel Hooks (by Isovalent, Inc.)</strong></p></figcaption></figure>
 
 eBPF enables visibility into and control over systems and applications at a level of granularity and efficiency that was not possible before. It does so in a completely transparent way, without requiring the application to change. Cilium harnesses the power of eBPF by layering an efficient identity concept, bringing Kubernetes contextual information, like metadata labels, to eBPF-powered networking logic.
 
@@ -107,13 +107,13 @@ Towards that end, Cilium includes a dedicated network observability component ca
 * Configurable Prometheus metrics exports.
 * A graphical UI to visualize the network traffic flowing through your clusters.
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption><p>Hubble UI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption><p>Hubble UI</p></figcaption></figure>
 
 ## Prometheus Metrics
 
 Cilium and Hubble export metrics about network performance and latency via Prometheus so that you can integrate Cilium metrics into your existing dashboards.
 
-<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
 ## Service Mesh
 

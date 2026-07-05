@@ -26,7 +26,7 @@ While code signing is not new technology, the growing prevalence of software in 
 
 Code signing involves a developer, software publisher, or entity (like an automated workload) digitally signing a software artifact to confirm their identity and ensure that the artifact was not tampered with since having been signed. Code signing has several implementations, and Cosign is one such implementation, but all code signing technology follows a similar process as Cosign.
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption><p><strong>Code Signing</strong></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (38).png" alt=""><figcaption><p><strong>Code Signing</strong></p></figcaption></figure>
 
 A developer (or organization) looking to sign their code with Cosign will first generate a key pair with public and private keys, and will then use the private key to create a digital signature for a given software artifact. A **key pair** is a combination of a signing key to sign data, and a verification key that is used to verify data signed with the corresponding signing key. Public keys can be known to others (and can be openly distributed), and private keys must only be known by the owner for signatures to be secure. With the key pair, the developer will sign their software artifact and store that signature in the registry (if applicable). This signature can later be verified by others through searching for an artifact, finding its signature, and then verifying it against the public key.
 

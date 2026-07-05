@@ -11,7 +11,7 @@ The integrity of the whole chain is of utmost importance in our digital age, as 
 
 Protecting the whole chain and maintaining innovation is not feasible. So it is done in stages and at various points. Think of the world of the Software Supply Chain in two dimensions: the chain of events around the code: software development, code reviews, version control, packaging, distribution, and ending with the end-user. Overlay a separate verification process, with “checkpoints” designed to verify and validate that what was originally built is what is actually delivered, all while tracking every request.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>General Approach to Software Supply Chain Security</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>General Approach to Software Supply Chain Security</p></figcaption></figure>
 
 ### Elements of Software Supply Chain Security
 
@@ -45,7 +45,7 @@ Verification refers to the process of ensuring that software artifacts and their
 
 Compromises in the software supply chain have been on the rise over the past decade. Attackers have, for instance, distributed compilers with backdoors added (example: XcodeGhost Compromise), broken into software build systems to inject malicious code  (example: SolarWinds Attack), and hijacked automatic update systems to distribute malware. The count of publicly reported software supply chain compromises, depending on the methodology, numbers in the hundreds or thousands. See the figure below for a graph describing the growth of software supply chain attacks.
 
-<figure><img src="../../.gitbook/assets/image (14) (1).png" alt=""><figcaption><p><strong>Count of Software Supply Chain Attacks by Year Reported</strong> <br>Data Source: Dan Geer, Bentz Tozer, and John Speed Meyers,<br>“Counting Broken Links: A Quant’s View of Software Supply Chain Security,” USENIX ;login:, December 2020.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (36).png" alt=""><figcaption><p><strong>Count of Software Supply Chain Attacks by Year Reported</strong> <br>Data Source: Dan Geer, Bentz Tozer, and John Speed Meyers,<br>“Counting Broken Links: A Quant’s View of Software Supply Chain Security,” USENIX ;login:, December 2020.</p></figcaption></figure>
 
 Countering these compromises through prevention, mitigation, and remediation has therefore taken on increasing urgency. Founded in 2020, the [Open Source Security Foundation](https://openssf.org/) (OpenSSF) has begun to devise improved defenses against software supply chain attacks. As a cross-industry collaboration, the OpenSSF partners with private companies, government agencies, and individuals to support their mission of proactively handling security. The [**Sigstore project**](https://www.sigstore.dev/) is one of these improved defenses, providing a method for guaranteeing the end-to-end integrity of software artifacts.
 
@@ -122,7 +122,7 @@ Sigstore’s GitHub repository contains a number of projects, although three are
 
 The image below provides a diagram describing the system architecture of Sigstore.
 
-<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption><p><strong>System Architecture of Sigstore</strong><br>Source: <a href="https://www.sigstore.dev/img/system_architecture_summary-01.svg">https://www.sigstore.dev/img/system_architecture_summary-01.svg </a></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (37).png" alt=""><figcaption><p><strong>System Architecture of Sigstore</strong><br>Source: <a href="https://www.sigstore.dev/img/system_architecture_summary-01.svg">https://www.sigstore.dev/img/system_architecture_summary-01.svg </a></p></figcaption></figure>
 
 Together, these components provide a system that makes widespread signing and verification of software artifacts possible. Software developers can more easily sign what they create, and software consumers can ensure that their software possesses integrity and was not compromised by tampering.
 
@@ -130,5 +130,4 @@ Together, these components provide a system that makes widespread signing and ve
 
 1. [For Good Measure - Counting Broken Links: a Quant's View of Software Supply Chain Security](https://www.usenix.org/system/files/login/articles/login_winter20_17_geer.pdf)
 2. [Novel Malware XcodeGhost Modifies Xcode, Infects Apple iOS Apps and Hits App Store](https://unit42.paloaltonetworks.com/novel-malware-xcodeghost-modifies-xcode-infects-apple-ios-apps-and-hits-app-store/)
-3. [Cybersecurity: Federal Response to SolarWinds and Microsoft Exchange Incidents\
-   ](https://www.gao.gov/products/gao-22-104746)
+3. [Cybersecurity: Federal Response to SolarWinds and Microsoft Exchange Incidents<br>](https://www.gao.gov/products/gao-22-104746)
