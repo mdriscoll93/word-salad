@@ -7,6 +7,7 @@ layout:
   cover:
     visible: true
     size: hero
+    mask: none
   title:
     visible: true
   description:
@@ -63,6 +64,10 @@ In other words, these are my personal notes - [the ones I am not too embarrassed
 
 {% content-ref url="word-salad/lfs241x/" %}
 [lfs241x](word-salad/lfs241x/)
+{% endcontent-ref %}
+
+{% content-ref url="word-salad/lfs148/" %}
+[lfs148](word-salad/lfs148/)
 {% endcontent-ref %}
 
 <figure><img src=".gitbook/assets/tall_corn_1.jpg" alt=""><figcaption><p>"Knowledge Gardens" are too complicated for my smooth brain; thus, I've opted for a literal garden to complement this knowledge base.</p></figcaption></figure>

@@ -57,3 +57,5 @@
       * [System Architecture](word-salad/lfs241x/03.-prometheus-introduction/system-architecture/README.md)
         * [Data Model](word-salad/lfs241x/03.-prometheus-introduction/system-architecture/data-model.md)
         * [Data Transfer Format](word-salad/lfs241x/03.-prometheus-introduction/system-architecture/data-transfer-format.md)
+  * [LFS148](word-salad/lfs148/README.md)
+    * [01.  Course Introduction](word-salad/lfs148/01.-course-introduction.md)
