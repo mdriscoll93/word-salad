@@ -262,8 +262,8 @@ Now both of these files exist in your home user directory (don’t forget where 
 You’ll get output that indicates the beginning and end of your public key, with a large string of mixed-case alphanumeric values in between.
 
 **-----BEGIN PUBLIC KEY-----**\
-&#xNAN;**…**\
-&#xNAN;**-----END PUBLIC KEY-----**
+**…**\
+**-----END PUBLIC KEY-----**
 
 With your keys set up, you are ready to move on to creating and signing a container.
 
