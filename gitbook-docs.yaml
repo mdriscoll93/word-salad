@@ -1,0 +1,11 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: word salad
+  structure:
+    - type: space
+      key: space-1
+      title: GNU UNIX
+      path: word-salad
+      default: true
+      content:
+        directory: ./word-salad
